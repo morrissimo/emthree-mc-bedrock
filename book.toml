@@ -1,0 +1,14 @@
+[book]
+title = "emthree Minecraft Bedrock Wiki"
+authors = ["emthree"]
+language = "en"
+src = "src"
+
+[output.html]
+git-repository-url = "https://github.com/morrissimo/emthree-mc-bedrock"
+edit-url-template = "https://github.com/morrissimo/emthree-mc-bedrock/edit/main/{path}"
+no-section-label = false
+
+[output.html.fold]
+enable = true
+level = 1
