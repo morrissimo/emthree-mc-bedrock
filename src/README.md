@@ -2,7 +2,7 @@
 
 This wiki covers the addons running on the emthree Bedrock server.
 
-> **Source of truth:** Recipe details are verified directly from addon source files, not the official Dorios Studios wiki.
+> **Source of truth:** Recipe details are verified directly from addon source files.
 
 ## Installed Addons
 
