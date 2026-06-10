@@ -4,25 +4,51 @@ UC adds multi-tools at all material tiers: Paxels (pick + axe + shovel) and AIOT
 
 ## Paxel
 
-Combines pickaxe, axe, and shovel into a single item. **Iron Paxel** recipe (vanilla crafting table):
+Combines pickaxe, axe, and shovel into a single item.
 
-```
-str    shovel  str
-axe    stick   pick
-str    stick   str
-```
+### Iron Paxel (vanilla crafting table, shaped)
 
-(`str` = string)
+Pattern: `A X A / Z S C / D S D` (A=string, X=iron_shovel, Z=iron_axe, S=stick, C=iron_pickaxe, D=string)
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="String"><img src="/images/items/string.png"></div>
+    <div class="crafting-slot" data-label="Iron Shovel"><img src="/images/items/iron_shovel.png"></div>
+    <div class="crafting-slot" data-label="String"><img src="/images/items/string.png"></div>
+    <div class="crafting-slot" data-label="Iron Axe"><img src="/images/items/iron_axe.png"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot" data-label="Iron Pickaxe"><img src="/images/items/iron_pickaxe.png"></div>
+    <div class="crafting-slot" data-label="String"><img src="/images/items/string.png"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot" data-label="String"><img src="/images/items/string.png"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Iron Paxel"><img src="/images/items/iron_paxel.png"></div>
+</div>
 
 ## AIOT — All In One Tool
 
-Adds hoe and sword functionality on top of the paxel. Requires a paxel as an ingredient. **Iron AIOT** (vanilla crafting table):
+Adds hoe and sword functionality on top of the paxel. Requires a paxel as an ingredient.
 
-```
-iron_ingot    iron_sword    iron_ingot
-string        iron_paxel    iron_hoe
-stick         string        iron_ingot
-```
+### Steel AIOT (vanilla crafting table, shaped)
+
+Pattern: `D S D / H P A / Z H D` (D=steel_ingot, S=steel_sword, H=string, P=steel_paxel, A=steel_hoe, Z=stick)
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot" data-label="Steel Sword"><img src="/images/items/steel_sword.png"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot" data-label="String"><img src="/images/items/string.png"></div>
+    <div class="crafting-slot" data-label="Steel Paxel"><img src="/images/items/steel_paxel.png"></div>
+    <div class="crafting-slot" data-label="Steel Hoe"><img src="/images/items/steel_hoe.png"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot" data-label="String"><img src="/images/items/string.png"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Steel AIOT"><img src="/images/items/steel_aiot.png"></div>
+</div>
 
 ## Tiers
 

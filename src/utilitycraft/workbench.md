@@ -4,18 +4,23 @@ The UC Workbench is required for all mid- and late-game recipes: chips, machine 
 
 ## Recipe (vanilla crafting table, shaped)
 
-```
-I C I
-_ S _
-I B I
-```
+Pattern: `I C I / _ S _ / I B I` (I=iron_ingot, C=copper_ingot, S=steel_ingot, B=steel_block)
 
-| Symbol | Item |
-|--------|------|
-| `I` | iron_ingot |
-| `C` | copper_ingot |
-| `S` | steel_ingot |
-| `B` | steel_block |
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Iron Ingot"><img src="/images/items/iron_ingot.png"></div>
+    <div class="crafting-slot" data-label="Copper Ingot"><img src="/images/items/copper_ingot.png"></div>
+    <div class="crafting-slot" data-label="Iron Ingot"><img src="/images/items/iron_ingot.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Iron Ingot"><img src="/images/items/iron_ingot.png"></div>
+    <div class="crafting-slot" data-label="Steel Block"><img src="/images/items/steel_block.png"></div>
+    <div class="crafting-slot" data-label="Iron Ingot"><img src="/images/items/iron_ingot.png"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="UC Workbench"><img src="/images/items/uc_workbench.png"></div>
+</div>
 
 ## Unlock
 

@@ -6,19 +6,23 @@ The base crusher from UC core is the unpowered version. [UC Tiered Machinery](..
 
 ## Recipe (UC Workbench, shaped)
 
-```
-S H S
-I M I
-S R S
-```
+Pattern: `S H S / I M I / S R S` (S=redstone, H=iron_hammer, I=chip, M=machine_case, R=gold_ingot)
 
-| Symbol | Item |
-|--------|------|
-| `S` | redstone |
-| `H` | iron_hammer (see [Hammers](hammers.md)) |
-| `I` | chip |
-| `M` | machine_case |
-| `R` | gold_ingot |
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Redstone"><img src="/images/items/redstone_dust.png"></div>
+    <div class="crafting-slot" data-label="Iron Hammer"><img src="/images/items/iron_hammer.png"></div>
+    <div class="crafting-slot" data-label="Redstone"><img src="/images/items/redstone_dust.png"></div>
+    <div class="crafting-slot" data-label="Chip"><img src="/images/items/chip.png"></div>
+    <div class="crafting-slot" data-label="Machine Case"><img src="/images/items/machine_case.png"></div>
+    <div class="crafting-slot" data-label="Chip"><img src="/images/items/chip.png"></div>
+    <div class="crafting-slot" data-label="Redstone"><img src="/images/items/redstone_dust.png"></div>
+    <div class="crafting-slot" data-label="Gold Ingot"><img src="/images/items/gold_ingot.png"></div>
+    <div class="crafting-slot" data-label="Redstone"><img src="/images/items/redstone_dust.png"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Crusher"><img src="/images/items/crusher.png"></div>
+</div>
 
 ## Ore Doubling — Raw Ores
 

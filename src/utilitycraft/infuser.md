@@ -4,19 +4,23 @@ The Infuser is a powered mid-game machine that infuses a **catalyst** into an **
 
 ## Build Recipe (UC Workbench, shaped)
 
-```
-R S R
-C M C
-R D R
-```
+Pattern: `R S R / C M C / R D R` (R=redstone, S=lapis_lazuli, C=basic_chip, M=machine_case, D=redstone_block)
 
-| Symbol | Item |
-|--------|------|
-| `R` | redstone |
-| `S` | lapis_lazuli |
-| `C` | basic_chip |
-| `M` | machine_case |
-| `D` | redstone_block |
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Redstone"><img src="/images/items/redstone_dust.png"></div>
+    <div class="crafting-slot" data-label="Lapis Lazuli"><img src="/images/items/lapis_lazuli.png"></div>
+    <div class="crafting-slot" data-label="Redstone"><img src="/images/items/redstone_dust.png"></div>
+    <div class="crafting-slot" data-label="Basic Chip"><img src="/images/items/basic_chip.png"></div>
+    <div class="crafting-slot" data-label="Machine Case"><img src="/images/items/machine_case.png"></div>
+    <div class="crafting-slot" data-label="Basic Chip"><img src="/images/items/basic_chip.png"></div>
+    <div class="crafting-slot" data-label="Redstone"><img src="/images/items/redstone_dust.png"></div>
+    <div class="crafting-slot" data-label="Redstone Block"><img src="/images/items/redstone_block.png"></div>
+    <div class="crafting-slot" data-label="Redstone"><img src="/images/items/redstone_dust.png"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Infuser"><img src="/images/items/infuser.png"></div>
+</div>
 
 ## Recipe Format
 
