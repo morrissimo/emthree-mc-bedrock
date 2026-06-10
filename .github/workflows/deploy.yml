@@ -1,4 +1,4 @@
-name: Deploy mdBook to GitHub Pages
+name: Deploy MkDocs to GitHub Pages
 
 on:
   push:
@@ -20,18 +20,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install mdBook
-        run: |
-          curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.40/mdbook-v0.4.40-x86_64-unknown-linux-gnu.tar.gz \
-            | tar -xz --directory /usr/local/bin
+      - uses: astral-sh/setup-uv@v5
 
-      - name: Build book
-        run: mdbook build
+      - name: Build site
+        run: uvx --with mkdocs-material mkdocs build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: book
+          path: site
 
   deploy:
     environment:

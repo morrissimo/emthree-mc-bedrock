@@ -26,7 +26,7 @@ A powered furnace/smelter that integrates with the UC power system.
 - This is the UC-power-connected smelting option
 - Distinct from [Better Smelters](better_smelters.md), which are standalone (no UC power required)
 
-## Electro Press {#electro-press}
+## Electro Press
 
 Makes **plates** from ingots. Plates are required ingredients for advanced-tier generators and machine upgrades.
 

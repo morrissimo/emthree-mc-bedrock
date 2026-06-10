@@ -1,0 +1,55 @@
+site_name: emthree Minecraft Bedrock Wiki
+site_url: https://mc-bedrock-wiki.emthree.com
+docs_dir: src
+
+repo_url: https://github.com/morrissimo/emthree-mc-bedrock
+edit_uri: edit/main/src/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.action.edit
+
+nav:
+  - Introduction: README.md
+  - UtilityCraft:
+    - Overview & Progression: utilitycraft/overview.md
+    - Steel & Smeltflare: utilitycraft/steel.md
+    - UC Workbench: utilitycraft/workbench.md
+    - Chips: utilitycraft/chips.md
+    - Energized Iron: utilitycraft/energized_iron.md
+    - Hammers: utilitycraft/hammers.md
+    - Machine Case: utilitycraft/machine_case.md
+    - Power System: utilitycraft/power.md
+    - Crusher: utilitycraft/crusher.md
+    - Infuser: utilitycraft/infuser.md
+    - Tools (Paxel & AIOT): utilitycraft/tools.md
+  - Companion Addons:
+    - Better Smelters: addons/better_smelters.md
+    - Bountiful Trees: addons/bountiful_trees.md
+    - Trinkets: addons/trinkets.md
+    - UC Tiered Machinery: addons/tiered_machinery.md
+  - emthree Addons:
+    - Crafting Tweaks: addons/crafting_tweaks.md
+    - Deepslate Tools: addons/deepslate_tools.md
+    - Nom Nom Nom: addons/nom_nom_nom.md
