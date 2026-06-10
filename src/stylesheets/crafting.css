@@ -1,0 +1,101 @@
+/* Minecraft crafting grid component */
+
+.crafting-recipe {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 1.2em 0;
+  flex-wrap: wrap;
+}
+
+.crafting-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  grid-template-rows: repeat(3, 48px);
+  gap: 3px;
+  background: #4a4a4a;
+  border: 3px solid #4a4a4a;
+  padding: 3px;
+  border-radius: 2px;
+  image-rendering: pixelated;
+}
+
+.crafting-arrow {
+  font-size: 2em;
+  color: #888;
+  line-height: 1;
+  padding: 0 4px;
+  user-select: none;
+}
+
+.crafting-output {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #8b8b8b;
+  border: 2px solid;
+  border-color: #fff #3f3f3f #3f3f3f #fff;
+  image-rendering: pixelated;
+  position: relative;
+}
+
+.crafting-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #8b8b8b;
+  border: 2px solid;
+  border-color: #fff #3f3f3f #3f3f3f #fff;
+  image-rendering: pixelated;
+  position: relative;
+  cursor: default;
+}
+
+.crafting-slot img,
+.crafting-output img {
+  width: 36px;
+  height: 36px;
+  image-rendering: pixelated;
+}
+
+.crafting-slot.empty {
+  background: #8b8b8b;
+}
+
+/* Tooltip */
+.crafting-slot[data-label]:hover::after,
+.crafting-output[data-label]:hover::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #100010;
+  color: #fff;
+  border: 1px solid #2d0c63;
+  padding: 4px 8px;
+  font-size: 0.75em;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 100;
+  font-family: var(--md-code-font-family);
+}
+
+/* Stack count badge */
+.crafting-slot .stack,
+.crafting-output .stack {
+  position: absolute;
+  bottom: 2px;
+  right: 3px;
+  font-size: 0.65em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 0 #3f3f3f;
+  line-height: 1;
+  pointer-events: none;
+  font-family: var(--md-code-font-family);
+}

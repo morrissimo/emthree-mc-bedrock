@@ -4,7 +4,9 @@ Adds a full deepslate-tier tool set. The standout feature is the **hammer** — 
 
 ## Tools
 
-All crafted at a vanilla crafting table using standard tool patterns with **polished_deepslate** + sticks.
+All crafted at a vanilla crafting table using standard tool patterns with **polished_deepslate** + sticks. Recipe unlock: having **cobbled_deepslate** in inventory.
+
+All tools are enchantable and repair with polished_deepslate (1 deepslate restores ~1/6 max durability).
 
 | Tool | Damage | Durability |
 |------|--------|------------|
@@ -15,9 +17,115 @@ All crafted at a vanilla crafting table using standard tool patterns with **poli
 | Deepslate Sword | 6 | 200 |
 | Deepslate Hammer | 4 | 250 |
 
-Recipe unlock: having **cobbled_deepslate** in inventory.
+---
 
-All tools are enchantable and repair with polished_deepslate (1 deepslate restores ~1/6 max durability).
+### Deepslate Pickaxe
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Deepslate Pickaxe"><img src="/images/items/pickaxe_deepslate.png"></div>
+</div>
+
+### Deepslate Axe
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Deepslate Axe"><img src="/images/items/axe_deepslate.png"></div>
+</div>
+
+### Deepslate Shovel
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Deepslate Shovel"><img src="/images/items/shovel_deepslate.png"></div>
+</div>
+
+### Deepslate Hoe
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Deepslate Hoe"><img src="/images/items/hoe_deepslate.png"></div>
+</div>
+
+### Deepslate Sword
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Deepslate Sword"><img src="/images/items/sword_deepslate.png"></div>
+</div>
+
+### Deepslate Hammer
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Deepslate Hammer"><img src="/images/items/hammer_deepslate.png"></div>
+</div>
 
 ## Hammer — 3×3 AOE Mining
 
