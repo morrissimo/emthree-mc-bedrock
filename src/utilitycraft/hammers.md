@@ -24,14 +24,6 @@ _ D _
 |--------|---|---|
 | wooden_hammer | planks | log |
 | stone_hammer | cobblestone | stone |
+| iron_hammer | iron_ingot | iron_block |
 | copper_hammer | copper_ingot | copper_block |
 | steel_hammer | steel_ingot | steel_block |
-
-## Known Bug — iron_hammer Missing Recipe
-
-> The Crusher build recipe requires `iron_hammer`. The `iron_hammer` item IS defined in the UC pack, but **no crafting recipe JSON exists** for it. This appears to be a v3.4.3 bug.
->
-> By the pattern above, it would be:
-> `iron_ingot×4 + iron_block + stick×2` — but that recipe file is absent from the pack.
->
-> Use creative mode or commands to obtain iron_hammer for the crusher build until this is fixed.

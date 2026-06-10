@@ -15,12 +15,10 @@ S R S
 | Symbol | Item |
 |--------|------|
 | `S` | redstone |
-| `H` | iron_hammer ⚠️ |
+| `H` | iron_hammer (see [Hammers](hammers.md)) |
 | `I` | chip |
 | `M` | machine_case |
 | `R` | gold_ingot |
-
-> **⚠️ iron_hammer bug:** No crafting recipe exists for iron_hammer in v3.4.3. Obtain via creative/commands. See [Hammers](hammers.md).
 
 ## Ore Doubling — Raw Ores
 

@@ -45,6 +45,3 @@ Expert / Ultimate tiers (diamond, netherite)
 | [Infuser](infuser.md) | Catalyst-based processing (chips, energized iron) |
 | [Tools](tools.md) | Paxel (pick+axe+shovel), AIOT (all-in-one) |
 
-## Known Bugs (v3.4.3)
-
-- `iron_hammer` — item exists, crusher recipe requires it, **no crafting recipe JSON**. Use a hammer obtained via creative/commands, or see the [Hammers](hammers.md) page for the presumed pattern.
