@@ -41,14 +41,17 @@ nav:
     - UC Workbench: utilitycraft/workbench.md
     - Chips: utilitycraft/chips.md
     - Energized Iron: utilitycraft/energized_iron.md
+    - Power System: utilitycraft/power.md
+    - Power System & Generators: utilitycraft/generators.md
     - Hammers: utilitycraft/hammers.md
     - Machine Case: utilitycraft/machine_case.md
-    - Power System: utilitycraft/power.md
     - Crusher: utilitycraft/crusher.md
     - Infuser: utilitycraft/infuser.md
+    - Machines: utilitycraft/machines.md
     - Tools (Paxel & AIOT): utilitycraft/tools.md
   - Companion Addons:
     - Better Smelters: addons/better_smelters.md
+    - Bountiful Bonsais: addons/bountiful_bonsais.md
     - Bountiful Trees: addons/bountiful_trees.md
     - Trinkets: addons/trinkets.md
     - UC Tiered Machinery: addons/tiered_machinery.md
