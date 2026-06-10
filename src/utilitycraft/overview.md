@@ -28,7 +28,7 @@ Expert / Ultimate tiers (diamond, netherite)
 
 ## Installed Version
 
-**v3.4.3** — Bedrock Edition. The Dorios Studios wiki is often outdated or wrong; all recipe details here are verified from the addon source files.
+**v3.4.3** — Bedrock Edition. All recipe details here are verified from the addon source files.
 
 ## Addon Structure
 

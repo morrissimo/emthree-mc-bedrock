@@ -37,4 +37,4 @@ The AIOT has two modes, toggled by sneaking:
 | **Not sneaking** | Hoe / tractor | 3×3 area: tills soil + tractor farming (auto-harvests fully grown vanilla crops; resets UC metal/gem crops to age 0 and collects them) |
 | **Sneaking** | Shovel | 3×3 area: converts dirt/grass to path blocks; clears snow |
 
-> **Correction to the Dorios Studios wiki:** The wiki claims AIOTs fell entire trees while sneaking. This is **not implemented in v3.4.3**.
+> **Note:** Tree-felling while sneaking is not implemented in v3.4.3 despite some documentation suggesting otherwise.

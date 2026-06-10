@@ -1,6 +1,6 @@
 # Energized Iron
 
-Energized iron gates the `advanced_chip` and many mid-game machines. It does **not** spawn as a world ore — there are no world generation features for it.
+Energized iron gates the `advanced_chip` and many mid-game machines. It does **not** spawn as a world ore — you have to grow it or make it.
 
 ## Sources
 
@@ -29,6 +29,3 @@ Once you have a powered [Infuser](infuser.md):
 - `energized_iron_dust` — infuser chip automation, advanced generator plates
 - `energized_iron_plate` — tiered generator and machine upgrades (via Electro Press)
 
-## Notes
-
-The `raw_energized_iron` item and block are defined in the UC pack, but no feature or feature_rule JSON exists for world gen. Bountiful Trees provides the only renewable surface source.

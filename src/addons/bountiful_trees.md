@@ -16,6 +16,34 @@ Ore trees — grow trees whose logs drop raw ore materials instead of (or in add
 
 All logs also drop **1 oak_log** alongside their ore drop.
 
+## Getting Saplings
+
+**Crafting** (vanilla crafting table, shaped) — wrap an oak sapling with 8 of the matching material:
+
+```
+M M M
+M S M
+M M M
+```
+`M` = ore/ingot, `S` = oak_sapling → 1× ore sapling
+
+| Sapling | Material (`M`) |
+|---------|---------------|
+| coal | coal |
+| copper | raw_copper |
+| gold | gold_ingot |
+| iron | iron_ingot |
+| energized iron | raw_energized_iron |
+| emerald | emerald |
+| diamond | diamond |
+| redstone | redstone |
+| lapis | lapis_lazuli |
+| quartz | nether_quartz |
+| netherite | netherite_ingot |
+| steel | steel_ingot |
+
+**Leaf drops** — breaking the colored leaves of a mature ore tree has a ~5% chance to drop the corresponding sapling. Good for expanding your orchard without spending more materials.
+
 ## Growing Trees
 
 1. Obtain the appropriate ore sapling

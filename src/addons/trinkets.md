@@ -2,9 +2,20 @@
 
 Equippable accessories with passive stat effects — rings, goggles, amulets, etc. Uses a slot-based system (ring slot, head slot, etc.).
 
-## Dependency Note
+## Opening the Trinket Inventory
 
-Trinkets bundles its own RPG Core in `scripts/Core/DoriosAPI/` — **no separate addon required**. The `register.js` script checks for an optional external RPG Core companion (for cross-addon stat integration) and logs a warning if not found, but all trinket effects work fully standalone without it.
+Trinkets don't use normal armor slots — they have their own inventory screen opened with a **scroll** item.
+
+**Scroll** (vanilla crafting table, shapeless):
+```
+1× paper  →  1× scroll
+```
+
+Hold the scroll in your main hand and **use** (right-click / interact) to open the trinket inventory. Drag trinkets into the appropriate slots — effects apply immediately while equipped.
+
+Two related scrolls:
+- **Stats scroll** — shows your current trinket-modified stats
+- **Recover scroll** — unequips all trinkets at once (can be crafted back into a regular scroll)
 
 ## Crafted Trinkets
 
