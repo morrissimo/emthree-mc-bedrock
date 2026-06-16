@@ -19,9 +19,11 @@ Build basic_furnator (power source)
   ↓
 Build crusher → ore doubling
   ↓
-Energized iron (ore trees) → advanced_chip
+Build infuser → run with iron + redstone → first energized iron ingots
   ↓
-Advanced machines (infuser, etc.)
+Plant energized iron sapling (8 ingots) → renewable ore tree
+  ↓
+advanced_chip → advanced machines
   ↓
 Expert / Ultimate tiers (diamond, netherite)
 ```

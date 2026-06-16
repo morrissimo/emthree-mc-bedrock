@@ -1,12 +1,24 @@
 # Energized Iron
 
-Energized iron gates the `advanced_chip` and many mid-game machines. It does **not** spawn as a world ore — you have to grow it or make it.
+Energized iron gates the `advanced_chip` and many mid-game machines. It does **not** spawn as a world ore — you have to make it first, then grow it.
 
-## Sources
+## Getting Your First Batch
 
-### Primary — Bountiful Trees (early-game renewable)
+Neither the [Infuser](infuser.md) nor the generators that power it require energized iron to build — only `basic_chip` and `machine_case`. So the bootstrap path is:
 
-The [energized iron ore tree](../addons/bountiful_trees.md) is the main source before you have power infrastructure.
+1. Steel → `chip` → `basic_chip` (UC Workbench, no energized iron needed)
+2. Build a `basic_furnator` (or any basic generator) for power
+3. Build an `infuser`
+4. Run the infuser: `redstone` (catalyst) + `iron_ingot` → `energized_iron_ingot` × 4 cycles per run
+5. After two runs you have 8 ingots — enough to craft an energized iron sapling
+
+Once the sapling is planted, the ore tree becomes your renewable supply and you rarely need to run the infuser for raw ingots again.
+
+## Ongoing Sources
+
+### Bountiful Trees (renewable)
+
+The [energized iron ore tree](../addons/bountiful_trees.md) is the main long-term source.
 
 - Grow an energized iron sapling on appropriate soil
 - Chop the logs with an axe → drops **1–2 raw_energized_iron** per log (plus 1 oak_log)
@@ -14,9 +26,9 @@ The [energized iron ore tree](../addons/bountiful_trees.md) is the main source b
 
 Bone meal speeds growth (20% chance per application). A mature tree yields several logs per harvest.
 
-### Secondary — Infuser (mid-game automation)
+### Infuser (automation)
 
-Once you have a powered [Infuser](infuser.md):
+A powered [Infuser](infuser.md) can also produce energized iron directly, useful for bulk dust production or if you don't have trees yet.
 
 | Catalyst | Input | Output | Cycles |
 |----------|-------|--------|--------|
@@ -28,4 +40,3 @@ Once you have a powered [Infuser](infuser.md):
 - `advanced_chip` recipe (4× energized_iron_ingot per chip)
 - `energized_iron_dust` — infuser chip automation, advanced generator plates
 - `energized_iron_plate` — tiered generator and machine upgrades (via Electro Press)
-
