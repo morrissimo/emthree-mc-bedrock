@@ -174,9 +174,24 @@ Uses a cross pattern: `_ M _ / M F M / _ M _` (M=nether_star, F=blazing_furnace)
   <div class="crafting-output" data-label="Nether Star Furnace"><img src="/images/items/nether_star_furnace.png"></div>
 </div>
 
+## Automatic Item I/O
+
+All smelters have built-in hopper-like behavior that runs every tick. The directions are **fixed** (relative to the way the furnace faces) and cannot be reconfigured:
+
+| Slot | Source/Destination | Direction |
+|------|--------------------|-----------|
+| Fuel | Pulled from | Block **above** |
+| Input (ingredients) | Pulled from | Block to the **left** |
+| Output | Pushed to | Block to the **right** |
+
+"Left" and "right" are relative to the furnace's facing direction (the side with the fire animation). A furnace facing **south**, for example, pulls input from the **east** side and pushes output to the **west** side.
+
+Only vanilla containers count as valid sources/destinations (chests, barrels, hoppers, etc.). Place and orient the furnace before connecting containers — orientation determines which side is which.
+
 ## Key Points
 
 - Each higher tier smelts faster than the previous
 - Not connected to UC power — no generators needed
 - Functions as a direct drop-in replacement for vanilla furnaces
 - Good parallel investment alongside UC machines; doesn't require the chip/power progression
+- Opening the furnace UI requires using the **Open** button that appears when looking at it — direct right-click/tap does not open it (by design)
