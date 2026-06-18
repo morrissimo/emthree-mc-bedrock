@@ -111,10 +111,6 @@ The Bonsai supports all 30 vanilla plantable saplings and seeds, plus additional
 | Brown Mushroom | Brown Mushroom | Use Mycelium or Podzol soil |
 | Red Mushroom | Red Mushroom | Use Mycelium or Podzol soil |
 
-### Bountiful Crops Compatibility
-
-If **Bountiful Crops** is installed, the Bonsai also supports all Bountiful Crops plant types (iron crops, diamond crops, etc.) — place the corresponding seed in the Bonsai the same way as vanilla seeds.
-
 ---
 
 ## Apple Sapling Recipe
@@ -134,7 +130,7 @@ The Apple Sapling is a UC-specific sapling that grows in the Bonsai and drops ap
     <div class="crafting-slot empty"></div>
   </div>
   <div class="crafting-arrow">→</div>
-  <div class="crafting-output" data-label="Apple Sapling"><img src="/images/items/oak_sapling.png"></div>
+  <div class="crafting-output" data-label="Apple Sapling"><img src="/images/items/apple_sapling.png"></div>
 </div>
 
 *Pattern: `ASA` (single row) — Apple (A), Oak Sapling (S)*

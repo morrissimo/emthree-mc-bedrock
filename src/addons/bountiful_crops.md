@@ -2,8 +2,6 @@
 
 Resource crops — plant a seed, harvest a renewable supply of materials that would otherwise require mining, mob grinding, or trading. Part of the UtilityCraft addon family; everything crafts at a vanilla crafting table.
 
-All crops are also compatible with the [Bonsai](bountiful_bonsais.md) for fully automated hands-off production.
-
 ---
 
 ## Getting Started
