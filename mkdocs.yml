@@ -30,6 +30,11 @@ theme:
     - search.suggest
     - content.action.edit
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
 extra_css:
   - stylesheets/crafting.css
 
