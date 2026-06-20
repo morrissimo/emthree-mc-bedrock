@@ -10,10 +10,10 @@ Steel is the gateway material for all of UtilityCraft. It is **manufactured**, n
 
 <div class="crafting-recipe">
   <div class="crafting-grid">
-    <div class="crafting-slot" data-label="Paper ×2"><img src="/images/items/paper.png"><span class="stack">2</span></div>
+    <div class="crafting-slot" data-label="Paper"><img src="/images/items/paper.png"></div>
+    <div class="crafting-slot" data-label="Paper"><img src="/images/items/paper.png"></div>
     <div class="crafting-slot" data-label="Coal"><img src="/images/items/coal.png"></div>
     <div class="crafting-slot" data-label="Flint"><img src="/images/items/flint.png"></div>
-    <div class="crafting-slot empty"></div>
     <div class="crafting-slot empty"></div>
     <div class="crafting-slot empty"></div>
     <div class="crafting-slot empty"></div>
@@ -28,10 +28,10 @@ Steel is the gateway material for all of UtilityCraft. It is **manufactured**, n
 
 <div class="crafting-recipe">
   <div class="crafting-grid">
-    <div class="crafting-slot" data-label="Paper ×2"><img src="/images/items/paper.png"><span class="stack">2</span></div>
+    <div class="crafting-slot" data-label="Paper"><img src="/images/items/paper.png"></div>
+    <div class="crafting-slot" data-label="Paper"><img src="/images/items/paper.png"></div>
     <div class="crafting-slot" data-label="Charcoal"><img src="/images/items/charcoal.png"></div>
     <div class="crafting-slot" data-label="Flint"><img src="/images/items/flint.png"></div>
-    <div class="crafting-slot empty"></div>
     <div class="crafting-slot empty"></div>
     <div class="crafting-slot empty"></div>
     <div class="crafting-slot empty"></div>
