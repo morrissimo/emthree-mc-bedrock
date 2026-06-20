@@ -6,10 +6,30 @@ Steel is the gateway material for all of UtilityCraft. It is **manufactured**, n
 
 ### Step 1 — smeltflare (vanilla crafting table, shapeless)
 
+**With coal:**
+
 <div class="crafting-recipe">
   <div class="crafting-grid">
-    <div class="crafting-slot" data-label="Paper"><img src="/images/items/paper.png"></div>
+    <div class="crafting-slot" data-label="Paper ×2"><img src="/images/items/paper.png"><span class="stack">2</span></div>
     <div class="crafting-slot" data-label="Coal"><img src="/images/items/coal.png"></div>
+    <div class="crafting-slot" data-label="Flint"><img src="/images/items/flint.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Smeltflare ×8"><img src="/images/items/smeltflare.png"><span class="stack">8</span></div>
+</div>
+
+**With charcoal:**
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Paper ×2"><img src="/images/items/paper.png"><span class="stack">2</span></div>
+    <div class="crafting-slot" data-label="Charcoal"><img src="/images/items/charcoal.png"></div>
     <div class="crafting-slot" data-label="Flint"><img src="/images/items/flint.png"></div>
     <div class="crafting-slot empty"></div>
     <div class="crafting-slot empty"></div>
