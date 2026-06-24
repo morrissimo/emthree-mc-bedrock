@@ -40,15 +40,13 @@ Crafted at a **vanilla crafting table** (not the UC Workbench).
 
 The Bonsai handles everything else — growth, harvesting, and outputting drops.
 
-!!! warning "Breaking a Bonsai loses the soil and seed inside"
-    Due to a bug in UtilityCraft, breaking a Bonsai that contains a planted seed and/or soil will **not** drop those items — they are lost permanently.
+!!! tip "Breaking a Bonsai returns the soil and seed"
+    Breaking a planted Bonsai drops the **bonsai block, the soil, and the seed** — nothing is lost. (This fixes an upstream UtilityCraft bug where the inserted items used to vanish on break.)
 
-    **Workaround:** Before breaking the Bonsai, retrieve your items first:
+    You can also retrieve the contents *without* breaking the Bonsai:
 
-    - **Sneak (crouch) + right-click with an empty hand** to remove the sapling or seed.
-    - Repeat with an empty hand (no sneaking required) to remove the soil block.
-
-    Once the Bonsai is empty, it is safe to break.
+    - **Sneak (crouch) + right-click with an empty hand** to pop out the sapling or seed.
+    - Repeat with an empty hand (no sneaking required) to pop out the soil block.
 
 ---
 
