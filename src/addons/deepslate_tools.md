@@ -114,12 +114,12 @@ All tools are enchantable and repair with polished_deepslate (1 deepslate restor
 
 <div class="crafting-recipe">
   <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Chiseled Deepslate"><img src="/images/items/chiseled_deepslate.png"></div>
     <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
-    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
-    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
-    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot" data-label="Chiseled Deepslate"><img src="/images/items/chiseled_deepslate.png"></div>
+    <div class="crafting-slot" data-label="Chiseled Deepslate"><img src="/images/items/chiseled_deepslate.png"></div>
     <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
-    <div class="crafting-slot" data-label="Polished Deepslate"><img src="/images/items/polished_deepslate.png"></div>
+    <div class="crafting-slot" data-label="Chiseled Deepslate"><img src="/images/items/chiseled_deepslate.png"></div>
     <div class="crafting-slot empty"></div>
     <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
     <div class="crafting-slot empty"></div>
