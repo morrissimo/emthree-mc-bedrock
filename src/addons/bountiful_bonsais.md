@@ -34,7 +34,7 @@ Crafted at a **vanilla crafting table** (not the UC Workbench).
 
 1. **Place the Bonsai** wherever you want your farm.
 2. **Right-click with a sapling or seed** to plant it inside the Bonsai.
-3. *(Optional)* **Right-click with a soil block** to set the soil type — different soils give growth speed bonuses and yield multipliers.
+3. *(Optional)* **Right-click with a soil block** to set the soil type — better soils harvest faster (soil changes growth *speed*, not drop *quantity*).
 4. *(Optional)* **Right-click with a hoe** to manually trigger a harvest cycle, reducing the time to next growth.
 5. **Place a hopper below** the Bonsai to collect drops automatically.
 
@@ -54,31 +54,33 @@ The Bonsai handles everything else — growth, harvesting, and outputting drops.
 
 ## Soil Types
 
-Right-click the Bonsai with a soil block to apply it. The base growth cycle is **60 seconds** with no soil bonus.
+Right-click the Bonsai with a soil block to apply it. Soil changes **how fast** the Bonsai harvests — it does **not** change how much drops per harvest. The base cycle is **60 seconds**; better soils shorten it.
 
 ### Vanilla Soils
 
-| Soil | Growth Bonus | Yield Multiplier | Notes |
-|---|---|---|---|
-| Dirt | — | 1× | Default, no bonus |
-| Grass Block | ~17% faster | 1× | Slight speed improvement |
-| Sand | — | 1× | Required for cactus and desert plants |
-| Red Sand | ~17% faster | 1× | Alternative for sand-type plants |
-| Soul Sand | — | 1× | Required for Nether Wart |
-| Crimson Nylium | — | 1× | Required for Crimson Fungus |
-| Warped Nylium | — | 1× | Required for Warped Fungus |
-| End Stone | — | 1× | Required for Chorus Fruit |
+| Soil | Harvest Interval | Notes |
+|---|---|---|
+| Dirt | 60s | Default, no bonus |
+| Grass Block | 50s | Slight speed boost |
+| Sand | 60s | Required for cactus and desert plants |
+| Red Sand | 50s | Alternative for sand-type plants |
+| Soul Sand | 60s | Required for Nether Wart |
+| Crimson Nylium | 60s | Required for Crimson Fungus |
+| Warped Nylium | 60s | Required for Warped Fungus |
+| End Stone | 60s | Required for Chorus Fruit |
+
+Tilling a vanilla-soil Bonsai with a **hoe** shaves another ~10s off the cycle.
 
 ### UC Special Soils
 
-UC special soils provide much stronger bonuses and **always work for any plant**, including all Bountiful Crops seeds regardless of tier.
+UC special soils harvest much faster and **always work for any plant**, including all Bountiful Crops seeds regardless of tier. (They can't be tilled with a hoe.)
 
-| Soil | Growth Bonus | Yield Multiplier |
-|---|---|---|
-| Yellow Soil | 25% faster | 1× |
-| Red Soil | 50% faster | 1× |
-| Blue Soil | 50% faster | 2× |
-| Black Soil | 83% faster | 4× |
+| Soil | Harvest Interval |
+|---|---|
+| Yellow Soil | 45s |
+| Red Soil | 30s |
+| Blue Soil | 30s |
+| Black Soil | 10s |
 
 ---
 
@@ -136,38 +138,41 @@ UC special soils provide much stronger bonuses and **always work for any plant**
 
 With the **Bountiful Crops Bonsai** addon installed, all 32 Bountiful Crops resource seeds can be planted in a Bonsai. Soil requirements are tier-gated — higher-tier seeds need rarer soils.
 
-**UC special soils (yellow/red/blue/black) always work for any tier** and provide significant growth and yield bonuses on top.
+**UC special soils (yellow/red/blue/black) always work for any tier** and harvest significantly faster on top.
+
+!!! note "Drop amounts are per-harvest ranges"
+    Tier 1 & 2 crops roll a random amount **each harvest**, and the low end is **0** — so some harvests come up empty. That's intended (the trade-off for fully passive output), not a bug. Every crop also has a flat **5% chance to drop a spare seed** for self-propagation. Tier 3 & 4 instead always drop exactly **1 shard/fragment** that crafts up 9 → 1.
 
 ### Tier 1 — Any vanilla soil
 
-| Seed | Primary Drops |
+| Seed | Primary Drops (per harvest) |
 |---|---|
-| Coal Seeds | Coal ×2–4 |
-| Copper Seeds | Raw Copper ×2–4 |
-| Dyes Seeds | Random dye (16 colors) |
-| Glass Seeds | Glass ×8–16 |
-| Gunpowder Seeds | Gunpowder ×4–8 |
-| Iron Seeds | Raw Iron ×1–3 |
-| Leather Seeds | Leather ×4–8 |
-| Prismarine Crystals Seeds | Prismarine Crystals ×8–12 |
-| Prismarine Shards Seeds | Prismarine Shard ×8–12 |
-| Water Seeds | Water Ball ×1–2 |
-| Wool Seeds | Wool ×2–4 |
+| Coal Seeds | Coal ×0–3 |
+| Copper Seeds | Raw Copper ×0–3 |
+| Dyes Seeds | Random dye (16 colors, ~5% each) |
+| Glass Seeds | Glass ×0–6 |
+| Gunpowder Seeds | Gunpowder ×0–4 |
+| Iron Seeds | Raw Iron ×0–3 |
+| Leather Seeds | Leather ×0–4 |
+| Prismarine Crystals Seeds | Prismarine Crystals ×0–5 |
+| Prismarine Shards Seeds | Prismarine Shard ×0–5 |
+| Water Seeds | Water Ball ×0–2 |
+| Wool Seeds | Wool ×0–3 |
 
 ### Tier 2 — Sand, Red Sand, Soul Sand, Crimson/Warped Nylium, or End Stone
 
-| Seed | Primary Drops |
+| Seed | Primary Drops (per harvest) |
 |---|---|
-| Ghast Seeds | Ghast Tear ×1–2 |
-| Glowstone Seeds | Glowstone Dust ×2–4 |
-| Gold Seeds | Raw Gold ×1–3 |
-| Honey Seeds | Honey Ball ×1–2 |
-| Lapis Seeds | Lapis Lazuli ×4–9 |
-| Lava Seeds | Lava Ball ×1–2 |
-| Quartz Seeds | Nether Quartz ×4–8 |
-| Redstone Seeds | Redstone ×3–8 |
-| Resin Seeds | Resin Clump ×1–2 |
-| Slime Seeds | Slime Ball ×1–3 |
+| Ghast Seeds | Ghast Tear ×0–1 |
+| Glowstone Seeds | Glowstone Dust ×0–3 |
+| Gold Seeds | Raw Gold ×0–2 |
+| Honey Seeds | Honey Ball ×0–2 |
+| Lapis Seeds | Lapis Lazuli ×0–4 |
+| Lava Seeds | Lava Ball ×0–2 |
+| Quartz Seeds | Nether Quartz ×0–4 |
+| Redstone Seeds | Redstone ×0–4 |
+| Resin Seeds | Resin Clump ×0–2 |
+| Slime Seeds | Slime Ball ×0–2 |
 
 ### Tier 3 — Soul Sand, Crimson/Warped Nylium, or End Stone
 
