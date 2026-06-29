@@ -1,8 +1,12 @@
 # Dollies
 
-A **dolly** (hand truck) for moving storage. Pick up a chest or barrel — *with everything
-inside it* — carry it wherever you want, and set it back down. No more emptying a chest
-into your inventory just to relocate it.
+A **dolly** (hand truck) for moving storage. Pick up a **single chest or a barrel** — *with
+everything inside it* — carry it wherever you want, and set it back down. No more emptying a
+chest into your inventory just to relocate it.
+
+!!! note "Single chests & barrels only"
+    The dolly does **not** move **double chests**. Sneak-tapping a double does nothing — break
+    it into singles first if you need to move it.
 
 ## Crafting
 
@@ -28,11 +32,17 @@ One dolly lasts forever — it's a reusable tool, not consumed.
 
 ## How to use it
 
-- **Pick up:** **sneak + use** (crouch, then tap/right-click) the dolly on a chest or barrel. The
-  block vanishes and your dolly now shows what it's carrying — *Dolly (Chest)*, *Dolly (Barrel)*,
-  etc.
+- **Pick up:** **sneak + use** (crouch, then tap/right-click) the dolly on a single chest or
+  barrel. The block vanishes and your dolly now shows what it's carrying — *Dolly (Chest)* or
+  *Dolly (Barrel)*.
 - **Set down:** **use** (tap/right-click, no sneak) the loaded dolly on an open spot. The chest/
   barrel reappears with **all of its contents exactly as they were**, and your dolly is empty again.
+
+!!! tip "It won't make a double chest"
+    To keep things simple and safe, a dolly won't set a chest down where it would merge into a
+    **double** with a chest right beside it — you'll see *"Can't place: would form a double chest."*
+    Just pick a spot that isn't flush against another same-facing chest, and your cargo stays put
+    on the dolly until it lands somewhere safe.
 
 !!! tip "Why sneak to pick up?"
     A normal tap on a chest just **opens** it (that's true on every device). Sneaking tells the
@@ -44,17 +54,17 @@ One dolly lasts forever — it's a reusable tool, not consumed.
 | Container | Works? |
 |---|---|
 | Chest (single) | ✅ |
-| **Double chest** | ✅ — picks up the **whole** double chest as one unit |
 | Barrel | ✅ |
-| Furnaces, hoppers, machines, etc. | ❌ — *"only carries chests and barrels"* |
+| **Double chest** | ❌ — not supported (sneak-tap does nothing) |
+| Furnaces, hoppers, machines, etc. | ❌ — silently ignored |
 
 - **Contents are never lost or changed** — item order, stacks, even enchanted/renamed items come
   back exactly as they went in.
-- A **double chest** is carried and placed as a single unit (both halves together). It needs **two
-  open blocks in a row** to set back down — if there's no room you'll see a hint and the dolly stays
-  loaded.
-- **Modded machines are refused on purpose.** Their contents live somewhere a dolly can't safely
-  move, so the dolly won't touch them.
+- **Double chests aren't supported.** Sneak-tapping one does nothing; and the dolly won't *create*
+  one either (it refuses a placement that would merge with an adjacent chest). Break a double into
+  two singles if you need to relocate it.
+- **Everything else is ignored on purpose.** Furnaces, hoppers, and modded machines store their
+  contents somewhere a dolly can't safely move, so it won't touch them.
 
 !!! warning "Don't lose your loaded dolly"
     A loaded dolly holds its cargo *in the item*. If you destroy the loaded dolly (lava, the void),
