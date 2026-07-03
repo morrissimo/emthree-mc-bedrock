@@ -262,6 +262,41 @@ Automatically fishes, including treasure and enchanted book drops. Place near wa
   <div class="crafting-output" data-label="Auto Fisher"><img src="/images/items/autofisher.png"></div>
 </div>
 
+#### Fishing Nets
+
+The Auto Fisher runs on a **fishing net** loaded into its net slot — the net is its "gear," and its tier sets how fast and how *well* the machine fishes. Higher tiers fish faster, take more loot rolls per cast, and (via higher **luck**) reel in **enchanted books and enchanted gear**.
+
+| Net | Tier | Speed | Rolls | Luck |
+|---|---|---|---|---|
+| <img src="/images/items/string_fishing_net.png" width="16"> String | 0 | 0.5× | 1 | 0 |
+| <img src="/images/items/copper_fishing_net.png" width="16"> Copper | 1 | 1.0× | 1 | 3 |
+| <img src="/images/items/iron_fishing_net.png" width="16"> Iron | 2 | 1.25× | 2 | 3 |
+| <img src="/images/items/golden_fishing_net.png" width="16"> Golden | 3 | 2.0× | 2 | **10** |
+| <img src="/images/items/emerald_fishing_net.png" width="16"> Emerald | 4 | 1.5× | 3 | 2 |
+| <img src="/images/items/diamond_fishing_net.png" width="16"> Diamond | 5 | 2.0× | 3 | 5 |
+| <img src="/images/items/netherite_fishing_net.png" width="16"> Netherite | 6 | 4.0× | 4 | 6 |
+
+- **Golden** has by far the highest luck (best for hunting enchanted loot) but very low durability — a glass cannon.
+- **Emerald** is a sidegrade: more rolls and durability, but lower speed/luck than Golden.
+
+The base **String Net** is crafted at the **UC Workbench**; each higher tier wraps the previous net in a ring of that tier's material (copper → iron → gold → emerald → diamond → netherite):
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="String"><img src="/images/items/string.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="String"><img src="/images/items/string.png"></div>
+    <div class="crafting-slot" data-label="String"><img src="/images/items/string.png"></div>
+    <div class="crafting-slot" data-label="String"><img src="/images/items/string.png"></div>
+    <div class="crafting-slot" data-label="String"><img src="/images/items/string.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="String"><img src="/images/items/string.png"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="String Fishing Net"><img src="/images/items/string_fishing_net.png"></div>
+</div>
+
 ---
 
 ### Auto Sieve
