@@ -1,4 +1,4 @@
-# Power System & Generators
+# Generators
 
 UC machines need power, produced by **generators**. UC has several generator families — Magmators
 (lava), Furnators (solid fuel), Solar Panels, Thermo Generators, and Wind Turbines. Power reaches
@@ -13,27 +13,31 @@ blocks + a *crafting ingredient* in the recipes below — not something you plac
 
 ---
 
-## Energy at a glance (basic tier)
+## Energy at a glance
 
-Values from the block definitions. Each higher tier is roughly **4× the previous** in both buffer
-and generation rate. Generators push **rate × 4** energy per tick into adjacent machines.
+Generation rate and buffer for **every tier**, straight from the block definitions. Bedrock runs at
+**20 ticks/sec**, so multiply the per-tick rate by 20 for per-second — e.g. a basic Magmator's
+50/tick is **≈1,000 energy/sec**. A generator can push up to **rate × 4** per tick into the machines
+touching it.
 
-| Generator | Buffer | Gen rate / tick | Fuel buffer |
+| Generator | Gen rate/tick (basic → ultimate) | Buffer (basic → ultimate) | Fuel / driver |
 |---|---|---|---|
-| Magmator | 80,000 | 50 | 32,000 mB lava (internal) |
-| Furnator | 64,000 | 40 | solid-fuel slot |
-| Solar Panel | 32,000 | 12 (noon peak) | — |
-| Thermo Generator | 32,000 | 20 × heat mult | 2,000 mB water (internal) |
-| Wind Turbine | 64,000 | 8 × altitude/weather | — |
-| Battery | 256,000 | 100 (I/O) | — (stores only) |
+| Magmator | 50 / 200 / 800 / 5,000 | 80k / 320k / 1.28M / 8M | lava (100 energy/mB, all tiers) |
+| Furnator | 40 / 160 / 640 / 4,000 | 64k / 256k / 1.02M / 6.4M | solid fuel |
+| Solar Panel | 12 / 48 / 192 / 1,200 | 32k / 128k / 512k / 3.2M | daylight (noon peak) |
+| Thermo Generator | 20 / 80 / 320 / 2,000 | 32k / 128k / 512k / 3.2M | heat block + water (× heat mult) |
+| Wind Turbine | 8 / 32 / 128 / 800 | 64k / 256k / 1.02M / 6.4M | altitude + weather |
+| Battery | 100 / 400 / 1,600 / 10,000 (I/O) | 256k / 1.02M / 4.1M / 25.6M | — (stores only) |
 
-Magmator lava yield is a flat **100 energy/mB** at every tier (100,000 per bucket).
+Thermo and Wind rates above are the **base** figures — multiply by the heat-block / altitude+weather
+multipliers described in their sections.
 
 ---
 
 ## Magmators
 
-Each tier is crafted by upgrading the previous one — you'll build all four in sequence.
+**Base output: ~50 energy/tick (≈1,000/sec)**, scaling to 5,000/tick at ultimate. Each tier is
+crafted by upgrading the previous one — you'll build all four in sequence.
 
 ### Basic Magmator
 
@@ -307,7 +311,8 @@ Batteries store UC power and can buffer output between generators and machines. 
 
 ## Furnators
 
-Furnators burn solid fuel (like a Blast Furnace) to generate UC power. They follow the same upgrade-chain pattern as Magmators.
+Furnators burn solid fuel (like a Blast Furnace) to generate UC power. **Base output: ~40 energy/tick
+(≈800/sec)**, up to 4,000/tick at ultimate. They follow the same upgrade-chain pattern as Magmators.
 
 ### Basic Furnator
 
@@ -402,6 +407,7 @@ Furnators burn solid fuel (like a Blast Furnace) to generate UC power. They foll
 Solar Panels generate UC power during the **day**. Output is a pure function of **time of day** — it
 ramps from zero at dawn to a **peak at noon** and back to zero at night. There is **no sky-access or
 light-level check**, so a panel still works fully enclosed or underground; it just has to be daytime.
+**Peak output (noon): ~12 energy/tick (≈240/sec)**, up to 1,200/tick at ultimate.
 
 ### Basic Solar Panel
 
@@ -499,7 +505,8 @@ block ×1.5**, lava ×1, soul fire / soul torch / soul campfire ×0.75, fire / c
 torch ×0.25 — so a blaze block gives the best output. They **burn 1 mB of water per unit of energy
 generated**; if the water runs out they stall ("No Coolant"), and any non-water fluid reads "Invalid
 Coolant". The Fluid Tank is only a **crafting ingredient** here — *not* placed underneath, and *not*
-lava or ice.
+lava or ice. **Base output: ~20 energy/tick × heat multiplier** (≈400/sec at ×1, ~600/sec under a
+blaze block), up to 2,000/tick at ultimate.
 
 ### Basic Thermo Generator
 
@@ -594,7 +601,8 @@ lava or ice.
 Wind Turbines generate UC power passively, scaling with **altitude** and **weather** — output rises
 the higher you place them (base around Y 63; below ~Y 20 they cut out with "Low Altitude", up to
 ~**4×** at high altitude) and with weather (**clear ×1, rain ×1.5, thunder ×2.25**). There is **no
-open-space-above requirement**. Higher tiers produce more base power.
+open-space-above requirement**. **Base output: ~8 energy/tick × altitude/weather** (≈160/sec at
+baseline), up to 800/tick at ultimate.
 
 ### Basic Wind Turbine
 
