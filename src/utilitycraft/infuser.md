@@ -24,9 +24,14 @@ Pattern: `R S R / C M C / R D R` (R=redstone, S=lapis_lazuli, C=basic_chip, M=ma
 
 ## Recipe Format
 
-All infuser recipes follow: **catalyst | input → output (N cycles)**
+Each infuser recipe is **catalyst + input → output**, and one operation yields **1 output**.
+The number in the tables below is how many **catalysts** each operation consumes — the **input is
+always 1**. So `redstone | iron_ingot → energized_iron_ingot (×4)` means **4 redstone + 1 iron
+ingot → 1 energized iron ingot** per craft. (Each op also draws 1,600 energy — the infuser is a
+powered machine.)
 
-The catalyst is consumed once; the input is consumed each cycle.
+> This page covers the primary chip + energized-iron recipes; the infuser also infuses **steel**
+> (see [Steel & Smeltflare](steel.md)), netherite, and many other materials — it's not exhaustive.
 
 ## Chip Recipes
 

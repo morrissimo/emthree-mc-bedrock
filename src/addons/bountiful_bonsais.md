@@ -88,18 +88,18 @@ UC special soils harvest much faster and **always work for any plant**, includin
 
 | Plant | Soil | Primary Drops |
 |---|---|---|
-| Oak Sapling | Dirt / Grass | Oak Log, Apple, Stick |
+| Oak Sapling | Dirt / Grass | Oak Log, Leaves, Stick |
 | Birch Sapling | Dirt / Grass | Birch Log, Stick |
 | Spruce Sapling | Dirt / Grass | Spruce Log, Stick |
 | Jungle Sapling | Dirt / Grass | Jungle Log, Cocoa Beans, Stick |
 | Acacia Sapling | Dirt / Grass | Acacia Log, Stick |
-| Dark Oak Sapling | Dirt / Grass | Dark Oak Log, Apple, Stick |
-| Cherry Sapling | Dirt / Grass | Cherry Log, Pink Petals, Stick |
-| Mangrove Propagule | Dirt / Grass | Mangrove Log, Mud, Stick |
-| Pale Oak Sapling | Dirt / Grass | Pale Oak Log, Stick |
-| Azalea | Dirt / Grass | Azalea, Oak Log |
-| Flowering Azalea | Dirt / Grass | Flowering Azalea, Oak Log |
-| **Apple Sapling** | Dirt / Grass | Apple, Oak Log |
+| Dark Oak Sapling | Dirt / Grass | Dark Oak Log, Leaves, Stick |
+| Cherry Sapling | Dirt / Grass | Cherry Log, Leaves, Stick |
+| Mangrove Propagule | Dirt / Grass | Mangrove Log, Leaves, Stick |
+| Pale Oak Sapling | Dirt / Grass | Pale Oak Log, Stick, Resin Clump (3%) |
+| Azalea | Dirt / Grass | Oak Log, Stick, Azalea (10%), Flowering Azalea (2%) |
+| Flowering Azalea | Dirt / Grass | Oak Log, Stick, Spore Flower (5%) |
+| **Apple Sapling** | Dirt / Grass | Oak Log, Leaves, Stick, Apple, Golden Apple (10%), rare Enchanted Golden Apple |
 
 *Apple Sapling is a UC-specific item — see recipe below.*
 
@@ -107,28 +107,34 @@ UC special soils harvest much faster and **always work for any plant**, includin
 
 | Plant | Soil | Primary Drops |
 |---|---|---|
-| Crimson Fungus | Crimson Nylium only | Crimson Stem, Nether Wart Block, Weeping Vines |
-| Warped Fungus | Warped Nylium only | Warped Stem, Warped Wart Block, Twisting Vines |
+| Crimson Fungus | Crimson Nylium only | Crimson Stem, Shroomlight, Nether Wart Block |
+| Warped Fungus | Warped Nylium only | Warped Stem, Shroomlight, Warped Wart Block |
 | Nether Wart | Soul Sand only | Nether Wart |
 
 ### Crops & Seeds
 
 | Plant | Soil | Primary Drops |
 |---|---|---|
-| Wheat Seeds | Dirt / Grass | Wheat, Wheat Seeds |
-| Carrot | Dirt / Grass | Carrots |
+| Wheat Seeds | Dirt / Grass | Wheat, Wheat Seeds, Bread (10%) |
+| Carrot | Dirt / Grass | Carrots, Golden Carrot (10%) |
 | Potato | Dirt / Grass | Potatoes, Poisonous Potato |
 | Beetroot Seeds | Dirt / Grass | Beetroot, Beetroot Seeds |
-| Melon Seeds | Dirt / Grass | Melon Slice |
-| Pumpkin Seeds | Dirt / Grass | Pumpkin |
+| Melon Seeds | Dirt / Grass | Melon Slice, Melon Block (5%) |
+| Pumpkin Seeds | Dirt / Grass | Pumpkin, Pumpkin Pie (10%) |
 | Sweet Berries | Dirt / Grass | Sweet Berries |
 | Bamboo | Dirt / Grass | Bamboo |
 | Sugar Cane | Dirt / Grass / Sand / Red Sand | Sugar Cane |
 | Kelp | Sand / Red Sand / Dirt / Grass | Kelp |
 | Cactus | Sand / Red Sand only | Cactus |
-| Chorus Fruit | End Stone only | Chorus Fruit, Popped Chorus Fruit |
+| Chorus Fruit | End Stone only | Chorus Fruit, Chorus Flower — ⚠️ *currently broken, see note* |
 | Brown Mushroom | Dirt / Grass | Brown Mushroom |
 | Red Mushroom | Dirt / Grass | Red Mushroom |
+
+!!! warning "The Chorus bonsai currently drops nothing"
+    Upstream UtilityCraft bug: the bonsai plants `minecraft:chorus_fruit`, but its loot table is
+    keyed to `minecraft:chorus_flower`, so the lookup misses and no drops are produced. Skip the
+    Chorus bonsai until this is patched. (When working, it's meant to drop Chorus Fruit ×1–2 plus a
+    5% Chorus Flower.)
 
 ---
 
@@ -197,7 +203,9 @@ With the **Bountiful Crops Bonsai** addon installed, all 32 Bountiful Crops reso
 
 ## Apple Sapling Recipe
 
-The Apple Sapling is a UC-specific sapling that grows in the Bonsai and drops apples along with oak logs. Craft it at a vanilla crafting table.
+The Apple Sapling is a UC-specific sapling that grows in the Bonsai and drops oak logs, leaves,
+sticks, and apples — plus a **golden apple ~10%** of the time (and a very rare enchanted golden
+apple). Craft it at a vanilla crafting table.
 
 <div class="crafting-recipe">
   <div class="crafting-grid">

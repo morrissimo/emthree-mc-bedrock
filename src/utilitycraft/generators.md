@@ -1,8 +1,33 @@
 # Power System & Generators
 
-UC machines need power. The primary generator type is the **Magmator**, which burns lava to produce UC energy. Power transfers by adjacency — no cables needed. See [Power System](power.md) for full adjacency rules, transfer modes, and cable info.
+UC machines need power, produced by **generators**. UC has several generator families — Magmators
+(lava), Furnators (solid fuel), Solar Panels, Thermo Generators, and Wind Turbines. Power reaches
+machines by **adjacency** (or over energy cables); see [Power System](power.md) for adjacency rules,
+transfer modes, and cables.
 
-**Fuel:** Magmators consume **lava buckets** stored in a **Fluid Tank** placed directly below them. Higher-tier magmators produce more power per lava bucket but require a matching-tier (or higher) fluid tank.
+**Magmator fuel:** a Magmator burns lava from its **own internal lava buffer** — you fill it
+directly with lava buckets (or pipe lava in). There is **no** separate fluid tank placed underneath,
+and every tier yields the **same 100 energy per mB** of lava (100,000 per bucket). Higher tiers just
+burn faster and hold more; they don't extract more per bucket. (Fluid Tanks are standalone storage
+blocks + a *crafting ingredient* in the recipes below — not something you place under the magmator.)
+
+---
+
+## Energy at a glance (basic tier)
+
+Values from the block definitions. Each higher tier is roughly **4× the previous** in both buffer
+and generation rate. Generators push **rate × 4** energy per tick into adjacent machines.
+
+| Generator | Buffer | Gen rate / tick | Fuel buffer |
+|---|---|---|---|
+| Magmator | 80,000 | 50 | 32,000 mB lava (internal) |
+| Furnator | 64,000 | 40 | solid-fuel slot |
+| Solar Panel | 32,000 | 12 (noon peak) | — |
+| Thermo Generator | 32,000 | 20 × heat mult | 2,000 mB water (internal) |
+| Wind Turbine | 64,000 | 8 × altitude/weather | — |
+| Battery | 256,000 | 100 (I/O) | — (stores only) |
+
+Magmator lava yield is a flat **100 energy/mB** at every tier (100,000 per bucket).
 
 ---
 
@@ -108,27 +133,31 @@ Maximum power output. Late-game generator; requires Netherite Plate and Ultimate
 
 ## Fluid Tanks
 
-Fluid Tanks hold lava for Magmators. Place one directly below the Magmator and fill it with lava buckets. Higher-tier tanks hold more lava and are required for higher-tier Magmators.
+Fluid Tanks are standalone **fluid storage** blocks (lava, water, etc.) — fill them by right-clicking
+with a bucket or wiring them into a fluid-pipe network. They're used as a **crafting ingredient** in
+Magmator and Thermo Generator recipes; they are **not** placed underneath a machine. Capacities:
+**32,000 / 128,000 / 512,000 / 3,200,000 mB** (basic→ultimate), and they're an **upgrade chain** —
+each tier consumes 3× of the previous tier's tank.
 
 ### Basic Fluid Tank
 
 <div class="crafting-recipe">
   <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Gold Plate"><img src="/images/items/gold_plate.png"></div>
+    <div class="crafting-slot" data-label="Glass"><img src="/images/items/glass.png"></div>
+    <div class="crafting-slot" data-label="Gold Plate"><img src="/images/items/gold_plate.png"></div>
+    <div class="crafting-slot" data-label="Glass"><img src="/images/items/glass.png"></div>
     <div class="crafting-slot" data-label="Basic Chip"><img src="/images/items/basic_chip.png"></div>
-    <div class="crafting-slot" data-label="Redstone"><img src="/images/items/redstone_dust.png"></div>
-    <div class="crafting-slot" data-label="Basic Chip"><img src="/images/items/basic_chip.png"></div>
-    <div class="crafting-slot" data-label="Redstone"><img src="/images/items/redstone_dust.png"></div>
-    <div class="crafting-slot" data-label="Redstone Block"><img src="/images/items/redstone_block.png"></div>
-    <div class="crafting-slot" data-label="Redstone"><img src="/images/items/redstone_dust.png"></div>
-    <div class="crafting-slot" data-label="Basic Chip"><img src="/images/items/basic_chip.png"></div>
-    <div class="crafting-slot" data-label="Gold Dust"><img src="/images/items/gold_dust.png"></div>
-    <div class="crafting-slot" data-label="Basic Chip"><img src="/images/items/basic_chip.png"></div>
+    <div class="crafting-slot" data-label="Glass"><img src="/images/items/glass.png"></div>
+    <div class="crafting-slot" data-label="Gold Plate"><img src="/images/items/gold_plate.png"></div>
+    <div class="crafting-slot" data-label="Glass"><img src="/images/items/glass.png"></div>
+    <div class="crafting-slot" data-label="Gold Plate"><img src="/images/items/gold_plate.png"></div>
   </div>
   <div class="crafting-arrow">→</div>
   <div class="crafting-output" data-label="Basic Fluid Tank"><img src="/images/items/basic_fluid_tank.png"></div>
 </div>
 
-*Pattern: `CAC / ABA / CDC` — Basic Chip (C), Redstone (A), Redstone Block (B), Gold Dust (D)*
+*Gold Plate (4 corners) + Glass (4 edges) + Basic Chip (center).*
 
 ---
 
@@ -136,21 +165,21 @@ Fluid Tanks hold lava for Magmators. Place one directly below the Magmator and f
 
 <div class="crafting-recipe">
   <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Energized Iron Ingot"><img src="/images/items/energized_iron_ingot.png"></div>
+    <div class="crafting-slot" data-label="Basic Fluid Tank"><img src="/images/items/basic_fluid_tank.png"></div>
+    <div class="crafting-slot" data-label="Energized Iron Ingot"><img src="/images/items/energized_iron_ingot.png"></div>
+    <div class="crafting-slot" data-label="Basic Fluid Tank"><img src="/images/items/basic_fluid_tank.png"></div>
     <div class="crafting-slot" data-label="Advanced Chip"><img src="/images/items/advanced_chip.png"></div>
-    <div class="crafting-slot" data-label="Basic Battery"><img src="/images/items/basic_battery.png"></div>
-    <div class="crafting-slot" data-label="Advanced Chip"><img src="/images/items/advanced_chip.png"></div>
-    <div class="crafting-slot" data-label="Basic Battery"><img src="/images/items/basic_battery.png"></div>
-    <div class="crafting-slot" data-label="Redstone Block"><img src="/images/items/redstone_block.png"></div>
-    <div class="crafting-slot" data-label="Basic Battery"><img src="/images/items/basic_battery.png"></div>
-    <div class="crafting-slot" data-label="Advanced Chip"><img src="/images/items/advanced_chip.png"></div>
-    <div class="crafting-slot" data-label="Energized Iron Dust"><img src="/images/items/energized_iron_dust.png"></div>
-    <div class="crafting-slot" data-label="Advanced Chip"><img src="/images/items/advanced_chip.png"></div>
+    <div class="crafting-slot" data-label="Basic Fluid Tank"><img src="/images/items/basic_fluid_tank.png"></div>
+    <div class="crafting-slot" data-label="Energized Iron Ingot"><img src="/images/items/energized_iron_ingot.png"></div>
+    <div class="crafting-slot" data-label="Glass"><img src="/images/items/glass.png"></div>
+    <div class="crafting-slot" data-label="Energized Iron Ingot"><img src="/images/items/energized_iron_ingot.png"></div>
   </div>
   <div class="crafting-arrow">→</div>
   <div class="crafting-output" data-label="Advanced Fluid Tank"><img src="/images/items/advanced_fluid_tank.png"></div>
 </div>
 
-*Pattern: `CAC / ABA / CDC` — Advanced Chip (C), Basic Battery (A), Redstone Block (B), Energized Iron Dust (D)*
+*Energized Iron Ingot (4) + Basic Fluid Tank (3) + Advanced Chip (center) + Glass. Each tier consumes 3× the previous tank.*
 
 ---
 
@@ -158,21 +187,21 @@ Fluid Tanks hold lava for Magmators. Place one directly below the Magmator and f
 
 <div class="crafting-recipe">
   <div class="crafting-grid">
-    <div class="crafting-slot" data-label="Expert Chip"><img src="/images/items/expert_chip.png"></div>
-    <div class="crafting-slot" data-label="Advanced Battery"><img src="/images/items/advanced_battery.png"></div>
-    <div class="crafting-slot" data-label="Expert Chip"><img src="/images/items/expert_chip.png"></div>
-    <div class="crafting-slot" data-label="Advanced Battery"><img src="/images/items/advanced_battery.png"></div>
-    <div class="crafting-slot" data-label="Redstone Block"><img src="/images/items/redstone_block.png"></div>
-    <div class="crafting-slot" data-label="Advanced Battery"><img src="/images/items/advanced_battery.png"></div>
-    <div class="crafting-slot" data-label="Expert Chip"><img src="/images/items/expert_chip.png"></div>
     <div class="crafting-slot" data-label="Diamond Dust"><img src="/images/items/diamond_dust.png"></div>
+    <div class="crafting-slot" data-label="Advanced Fluid Tank"><img src="/images/items/advanced_fluid_tank.png"></div>
+    <div class="crafting-slot" data-label="Diamond Dust"><img src="/images/items/diamond_dust.png"></div>
+    <div class="crafting-slot" data-label="Advanced Fluid Tank"><img src="/images/items/advanced_fluid_tank.png"></div>
     <div class="crafting-slot" data-label="Expert Chip"><img src="/images/items/expert_chip.png"></div>
+    <div class="crafting-slot" data-label="Advanced Fluid Tank"><img src="/images/items/advanced_fluid_tank.png"></div>
+    <div class="crafting-slot" data-label="Diamond Dust"><img src="/images/items/diamond_dust.png"></div>
+    <div class="crafting-slot" data-label="Glass"><img src="/images/items/glass.png"></div>
+    <div class="crafting-slot" data-label="Diamond Dust"><img src="/images/items/diamond_dust.png"></div>
   </div>
   <div class="crafting-arrow">→</div>
   <div class="crafting-output" data-label="Expert Fluid Tank"><img src="/images/items/expert_fluid_tank.png"></div>
 </div>
 
-*Pattern: `CAC / ABA / CDC` — Expert Chip (C), Advanced Battery (A), Redstone Block (B), Diamond Dust (D)*
+*Diamond Dust (4) + Advanced Fluid Tank (3) + Expert Chip (center) + Glass.*
 
 ---
 
@@ -180,23 +209,21 @@ Fluid Tanks hold lava for Magmators. Place one directly below the Magmator and f
 
 <div class="crafting-recipe">
   <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Netherite Dust"><img src="/images/items/netherite_dust.png"></div>
+    <div class="crafting-slot" data-label="Expert Fluid Tank"><img src="/images/items/expert_fluid_tank.png"></div>
+    <div class="crafting-slot" data-label="Netherite Dust"><img src="/images/items/netherite_dust.png"></div>
+    <div class="crafting-slot" data-label="Expert Fluid Tank"><img src="/images/items/expert_fluid_tank.png"></div>
     <div class="crafting-slot" data-label="Ultimate Chip"><img src="/images/items/ultimate_chip.png"></div>
-    <div class="crafting-slot" data-label="Expert Battery"><img src="/images/items/expert_battery.png"></div>
-    <div class="crafting-slot" data-label="Ultimate Chip"><img src="/images/items/ultimate_chip.png"></div>
-    <div class="crafting-slot" data-label="Expert Battery"><img src="/images/items/expert_battery.png"></div>
-    <div class="crafting-slot" data-label="Redstone Block"><img src="/images/items/redstone_block.png"></div>
-    <div class="crafting-slot" data-label="Expert Battery"><img src="/images/items/expert_battery.png"></div>
-    <div class="crafting-slot" data-label="Ultimate Chip"><img src="/images/items/ultimate_chip.png"></div>
-    <div class="crafting-slot" data-label="Netherite Dust"><img src="/images/items/netherite_ingot.png"></div>
-    <div class="crafting-slot" data-label="Ultimate Chip"><img src="/images/items/ultimate_chip.png"></div>
+    <div class="crafting-slot" data-label="Expert Fluid Tank"><img src="/images/items/expert_fluid_tank.png"></div>
+    <div class="crafting-slot" data-label="Netherite Dust"><img src="/images/items/netherite_dust.png"></div>
+    <div class="crafting-slot" data-label="Glass"><img src="/images/items/glass.png"></div>
+    <div class="crafting-slot" data-label="Netherite Dust"><img src="/images/items/netherite_dust.png"></div>
   </div>
   <div class="crafting-arrow">→</div>
   <div class="crafting-output" data-label="Ultimate Fluid Tank"><img src="/images/items/ultimate_fluid_tank.png"></div>
 </div>
 
-*Pattern: `CAC / ABA / CDC` — Ultimate Chip (C), Expert Battery (A), Redstone Block (B), Netherite Dust (D)*
-
-> **Note:** The Ultimate Fluid Tank recipe calls for `utilitycraft:netherite_dust`. No dedicated netherite dust texture was found in the RP items — the Netherite Ingot icon is used as a placeholder above.
+*Netherite Dust (4) + Expert Fluid Tank (3) + Ultimate Chip (center) + Glass. Netherite dust comes from the [Crusher](crusher.md).*
 
 ---
 
@@ -269,14 +296,12 @@ Batteries store UC power and can buffer output between generators and machines. 
     <div class="crafting-slot" data-label="Redstone Block"><img src="/images/items/redstone_block.png"></div>
     <div class="crafting-slot" data-label="Expert Battery"><img src="/images/items/expert_battery.png"></div>
     <div class="crafting-slot" data-label="Ultimate Chip"><img src="/images/items/ultimate_chip.png"></div>
-    <div class="crafting-slot" data-label="Netherite Dust"><img src="/images/items/netherite_ingot.png"></div>
+    <div class="crafting-slot" data-label="Netherite Dust"><img src="/images/items/netherite_dust.png"></div>
     <div class="crafting-slot" data-label="Ultimate Chip"><img src="/images/items/ultimate_chip.png"></div>
   </div>
   <div class="crafting-arrow">→</div>
   <div class="crafting-output" data-label="Ultimate Battery"><img src="/images/items/ultimate_battery.png"></div>
 </div>
-
-> **Note:** Ultimate Battery uses `utilitycraft:netherite_dust` — no dedicated texture found, Netherite Ingot used as placeholder.
 
 ---
 
@@ -374,7 +399,9 @@ Furnators burn solid fuel (like a Blast Furnace) to generate UC power. They foll
 
 ## Solar Panels
 
-Solar Panels generate UC power from sunlight. They require a clear view of the sky to function. Output scales with light level, so they're most effective during the day.
+Solar Panels generate UC power during the **day**. Output is a pure function of **time of day** — it
+ramps from zero at dawn to a **peak at noon** and back to zero at night. There is **no sky-access or
+light-level check**, so a panel still works fully enclosed or underground; it just has to be daytime.
 
 ### Basic Solar Panel
 
@@ -466,27 +493,31 @@ Solar Panels generate UC power from sunlight. They require a clear view of the s
 
 ## Thermo Generators
 
-Thermo Generators harness temperature differentials to produce UC power. Unlike Magmators, they don't consume lava directly — but they still require Fluid Tanks. Higher tiers use matching-tier Fluid Tanks.
+Thermo Generators produce UC power from a **heat-source block placed directly below** them, using
+**water as coolant** from their own internal buffer. Valid heat blocks (with output multipliers):
+**blaze block ×1.5**, lava ×1, soul fire / soul torch / soul campfire ×0.75, fire / campfire / magma
+×0.5, torch ×0.25. Keep **water** in it (it consumes 1 energy per mB of water) — *not lava, not
+ice*. The Fluid Tank is only a **crafting ingredient**, not placed underneath.
 
 ### Basic Thermo Generator
 
 <div class="crafting-recipe">
   <div class="crafting-grid">
     <div class="crafting-slot" data-label="Copper Block"><img src="/images/items/copper_block.png"></div>
-    <div class="crafting-slot" data-label="Gold Plate"><img src="/images/items/gold_plate.png"></div>
+    <div class="crafting-slot" data-label="Copper Plate"><img src="/images/items/copper_plate.png"></div>
     <div class="crafting-slot" data-label="Copper Block"><img src="/images/items/copper_block.png"></div>
     <div class="crafting-slot" data-label="Basic Chip"><img src="/images/items/basic_chip.png"></div>
     <div class="crafting-slot" data-label="Basic Fluid Tank"><img src="/images/items/basic_fluid_tank.png"></div>
     <div class="crafting-slot" data-label="Basic Chip"><img src="/images/items/basic_chip.png"></div>
-    <div class="crafting-slot" data-label="Copper Plate"><img src="/images/items/copper_plate.png"></div>
+    <div class="crafting-slot" data-label="Gold Plate"><img src="/images/items/gold_plate.png"></div>
     <div class="crafting-slot" data-label="Copper Block"><img src="/images/items/copper_block.png"></div>
-    <div class="crafting-slot" data-label="Copper Plate"><img src="/images/items/copper_plate.png"></div>
+    <div class="crafting-slot" data-label="Gold Plate"><img src="/images/items/gold_plate.png"></div>
   </div>
   <div class="crafting-arrow">→</div>
   <div class="crafting-output" data-label="Basic Thermo Generator"><img src="/images/items/basic_thermo_generator.png"></div>
 </div>
 
-*Pattern: `ADA / EBE / CAC` — Copper Block (A), Gold Plate (D), Basic Chip (E), Basic Fluid Tank (B), Copper Plate (C)*
+*Copper Plate (top-center) + Copper Block (top corners + bottom-center) + Basic Chip (sides) + Basic Fluid Tank (center) + Gold Plate (bottom corners).*
 
 ---
 
@@ -558,7 +589,10 @@ Thermo Generators harness temperature differentials to produce UC power. Unlike 
 
 ## Wind Turbines
 
-Wind Turbines generate UC power from airflow. They need open space above them to operate. Higher tiers produce more power.
+Wind Turbines generate UC power passively, scaling with **altitude** and **weather** — output rises
+the higher you place them (base around Y 63; below ~Y 20 they cut out with "Low Altitude", up to
+~**4×** at high altitude) and with weather (**clear ×1, rain ×1.5, thunder ×2.25**). There is **no
+open-space-above requirement**. Higher tiers produce more base power.
 
 ### Basic Wind Turbine
 

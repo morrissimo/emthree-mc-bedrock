@@ -2,7 +2,16 @@
 
 The crusher is UC's ore doubler. It works via a **dust intermediate** — ore goes in, two dusts come out, smelt the dusts for two ingots instead of one.
 
-The base crusher from UC core is the unpowered version. [UC Tiered Machinery](../addons/tiered_machinery.md) wraps it into a powered `basic_crusher` and adds higher tiers.
+!!! warning "The crusher needs power"
+    The crusher is a **powered machine** — it draws UC energy every operation (base
+    `utilitycraft:crusher`: 64,000 energy buffer, **800 energy per crush**) and does **nothing**
+    without a power source. Hook it up to a generator (see [Power System](power.md) /
+    [Generators](generators.md)). There is **no** unpowered/hand-crank crusher.
+
+The base `utilitycraft:crusher` (from UC core) handles the everyday ore-doubling. [UC Tiered
+Machinery](../addons/tiered_machinery.md) adds higher-throughput tiers — `basic` → `advanced` →
+`expert` → `ultimate` crushers — that run faster and unlock the compressed-material recipes (the
+higher-tier entries below).
 
 ## Recipe (UC Workbench, shaped)
 
@@ -40,9 +49,10 @@ Pattern: `S H S / I M I / S R S` (S=redstone, H=iron_hammer, I=chip, M=machine_c
 | nether quartz | 2× quartz_dust | 2 |
 | amethyst shard | 2× amethyst_dust | 2 |
 
-## Raw Ore Block Bonus (~120% efficiency)
+## Raw Ore Block Bonus (~+33% vs direct)
 
-Raw ore blocks skip smelting penalties for a better yield than 9× direct-smelted ore:
+A raw ore block is 9 raw ore. Crushing it yields **12 dust** → 12 ingots, vs **9** from
+direct-smelting the same 9 raw ore — about **33% more** (needs 1,600 energy per block):
 
 | Input | Output | Net ingots |
 |-------|--------|------------|
@@ -59,9 +69,9 @@ Raw ore blocks skip smelting penalties for a better yield than 9× direct-smelte
 | dirt | sand | |
 | iron_ingot | 1× iron_dust | Downgrade — lossy, rarely useful |
 | iron_block | 6× iron_dust | ~80% recovery, lossy |
-| wool | 4× string | |
-| bone | bone_meal | |
-| bone_block | bone_meal (×9) | |
+| white wool | 4× string | white wool only |
+| bone | 3× bone_meal | |
+| bone_block | 9× bone_meal | |
 | nether_wart_block | 4× nether_wart | |
 | blaze_rod | 2× blaze_powder | |
 | magma_block | 4× magma_cream | |

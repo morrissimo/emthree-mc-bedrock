@@ -1,8 +1,33 @@
 # Machines
 
-UtilityCraft machines are crafted at the **UC Workbench** and require a connected power source to operate. All machines accept power by adjacency to a generator or battery — no cables needed.
+Most UtilityCraft machines are crafted at the **UC Workbench** and run on **UC energy** from a
+generator or battery — power reaches them by **adjacency**, or over **energy cables** for
+non-adjacent placement (see [Power System](power.md)). But a few of the blocks below run on
+**player XP** or need **no power at all** — check the "Power source" column below.
 
 For the foundational processing machines see also: [Crusher](crusher.md) and [Infuser](infuser.md).
+
+## Energy specs
+
+Values from the block definitions (buffer = energy storage, cost = energy per operation):
+
+| Machine | Buffer | Cost / op | Power source |
+|---|---|---|---|
+| Electro Press | 64,000 | 800 | UC energy |
+| Incinerator | 64,000 | 800 | UC energy |
+| Induction Anvil | 64,000 | 1,000 | UC energy |
+| Assembler | 256,000 | 1,600 | UC energy |
+| Block Breaker | 64,000 | 200 | UC energy |
+| Block Placer | 64,000 | 200 | UC energy |
+| Harvester | 128,000 | 100 | UC energy |
+| Auto Fisher | 512,000 | 6,400 | UC energy |
+| Auto Sieve | 512,000 | 6,400 | UC energy |
+| Digitizer | 32,000 | 400 | UC energy |
+| Seed Synthesizer | 2,048,000 | 8,000 | UC energy |
+| Magmatic Chamber | 640,000 | 8,000 | UC energy |
+| **XP Condenser** | — | — | **player XP** (not energy) |
+| **Way Center** | — | — | **XP levels** (not energy) |
+| Fan, Ender Hopper, XP Magnet, Mob Grinder, Trash Can | — | — | **none** |
 
 ---
 
@@ -116,7 +141,7 @@ An automated crafting machine. Load a Blueprint (made in the Digitizer) and it w
 
 Collects and stores experience orbs from nearby sources, converting them into bottled XP or storing them for later use.
 
-> Requires UC power.
+> Runs on **player XP**, not UC energy — no generator required.
 
 <div class="crafting-recipe">
   <div class="crafting-grid">
@@ -144,9 +169,9 @@ Collects and stores experience orbs from nearby sources, converting them into bo
 
 ### Block Breaker
 
-Breaks the block in front of it and drops the items into an adjacent hopper or chest. Activate with a redstone signal.
+Breaks the block in front of it and drops the items into an adjacent hopper or chest. It runs **continuously while powered** — no redstone signal needed.
 
-> Requires UC power.
+> Requires UC power (64,000 buffer, 200 / op).
 
 <div class="crafting-recipe">
   <div class="crafting-grid">
@@ -192,7 +217,7 @@ Places the block from its inventory into the world directly in front of it. Feed
 
 ### Harvester
 
-Automatically harvests a 9×9 crop area in front of it when powered. Works with any vanilla plantable crop. Place it at the edge of your farm facing the crops.
+Automatically harvests crops in front of it when powered — a **3×3 area at base**, expanding up to **9×9** with range upgrades. Works with any vanilla plantable crop. Place it at the edge of your farm facing the crops.
 
 > Requires UC power.
 
@@ -268,7 +293,7 @@ Powered version of the UC Sieve. Feed it gravel, sand, dust, or other sieveable 
 
 ### Mob Grinder
 
-Damages and kills mobs placed or wandering on top of it. Combine with spawners or mob farms to automate mob drops. Does not require power — purely redstone-activated.
+Damages and kills mobs within its effect radius (not just those directly on top). Combine with spawners or mob farms to automate mob drops. **No power required** — toggle it on/off via its own in-block menu (no redstone).
 
 <div class="crafting-recipe">
   <div class="crafting-grid">
@@ -294,7 +319,7 @@ Damages and kills mobs placed or wandering on top of it. Combine with spawners o
 
 Pushes entities (including mobs and items) in the direction it faces. Useful for funneling mobs into a grinder or items into a hopper.
 
-> Requires UC power.
+> **No power required** — it just applies directional knockback (its range is set in-block).
 
 <div class="crafting-recipe">
   <div class="crafting-grid">
@@ -370,7 +395,7 @@ Pulls experience orbs from a wide area into itself, storing them for later retri
 
 A teleportation hub block. Right-click to set a named waypoint; right-click again to teleport to any stored waypoint. Excellent for large bases or long-distance travel.
 
-> Requires UC power.
+> Charges each teleport in **XP levels**, not UC energy — no generator required.
 
 <div class="crafting-recipe">
   <div class="crafting-grid">

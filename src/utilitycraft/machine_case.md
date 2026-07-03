@@ -24,10 +24,14 @@ Pattern: `S I S / G R G / S I S` (S=steel_ingot, I=iron_ingot, G=gold_ingot, R=r
 
 ## Uses
 
-Machine cases appear as ingredients in:
+The machine case is the core building block for **most UtilityCraft machines** — it's an
+ingredient in ~18 machine recipes, including:
 
-- [Crusher](crusher.md)
-- [Infuser](infuser.md)
-- All generator tiers
-- Wind turbine
-- Tiered machine upgrades (UC Tiered Machinery)
+- [Crusher](crusher.md) and [Infuser](infuser.md)
+- Assembler, Digitizer, Harvester, Block Breaker, Block Placer, Auto Sieve, Auto Fisher,
+  Incinerator, Electro Press, XP Condenser, Induction Anvil, Magmatic Chamber, Seed Synthesizer, Fan
+- The **basic Wind Turbine** — the *only* generator that uses a machine case (furnators, solar
+  panels, thermo generators, magmators, etc. do not)
+
+UC Tiered Machinery's tiered machines are built by **upgrading** a base machine, not from machine
+cases directly.
