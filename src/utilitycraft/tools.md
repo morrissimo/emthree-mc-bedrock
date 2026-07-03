@@ -64,3 +64,121 @@ The AIOT has two modes, toggled by sneaking:
 | **Sneaking** | Shovel | 3×3 area: converts dirt/grass to path blocks; clears snow |
 
 > **Note:** Tree-felling while sneaking is not implemented in v3.4.3 despite some documentation suggesting otherwise.
+
+---
+
+## Drills
+
+Handheld **area miners**. Break a block and the Drill destroys a **cube** centered on it (digging into the ground below), with drops obeying normal block loot. Both are enchantable (pickaxe slot) and deal 5 melee damage.
+
+| Drill | Tier | Mining cube | Dig speed | Durability | Repair with |
+|---|---|---|---|---|---|
+| Drill | Iron | 3×3×3 | 14 | 2031 | iron block (+800) or another drill |
+| Heavy Drill | Diamond | 5×5×5 | 20 | 4062 | diamond (+1600) or a drill |
+
+Both are crafted at the **UC Crafter** — the Heavy Drill consumes a Drill:
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Iron Ingot"><img src="/images/items/iron_ingot.png"></div>
+    <div class="crafting-slot" data-label="Iron Block"><img src="/images/items/iron_block.png"></div>
+    <div class="crafting-slot" data-label="Repeater"><img src="/images/items/repeater.png"></div>
+    <div class="crafting-slot" data-label="Amethyst Block"><img src="/images/items/amethyst_block.png"></div>
+    <div class="crafting-slot" data-label="Iron Ingot"><img src="/images/items/iron_ingot.png"></div>
+    <div class="crafting-slot" data-label="Redstone Block"><img src="/images/items/redstone_block.png"></div>
+    <div class="crafting-slot" data-label="Repeater"><img src="/images/items/repeater.png"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Drill"><img src="/images/items/drill.png"></div>
+</div>
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Diamond"><img src="/images/items/diamond.png"></div>
+    <div class="crafting-slot" data-label="Diamond Block"><img src="/images/items/diamond_block.png"></div>
+    <div class="crafting-slot" data-label="Repeater"><img src="/images/items/repeater.png"></div>
+    <div class="crafting-slot" data-label="Drill"><img src="/images/items/drill.png"></div>
+    <div class="crafting-slot" data-label="Diamond"><img src="/images/items/diamond.png"></div>
+    <div class="crafting-slot" data-label="Redstone Block"><img src="/images/items/redstone_block.png"></div>
+    <div class="crafting-slot" data-label="Repeater"><img src="/images/items/repeater.png"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Heavy Drill"><img src="/images/items/heavy_drill.png"></div>
+</div>
+
+## Steel Tools
+
+The steel tier fills the gap between iron and diamond on **durability** — **750 uses each** (~3× iron), dig speed 7, iron-tier mining (the pickaxe can't mine diamond-tier blocks). Crafted at a vanilla table with steel ingots + sticks. (A Steel Sword and Steel Hoe exist too.)
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Steel Axe"><img src="/images/items/steel_axe.png"></div>
+</div>
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Steel Pickaxe"><img src="/images/items/steel_pickaxe.png"></div>
+</div>
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Steel Shovel"><img src="/images/items/steel_shovel.png"></div>
+</div>
+
+## Flint Knife
+
+An early-game **shears substitute and fiber farming tool**. It mines all leaf types quickly, and breaking any leaf block drops **1–2 [Fiber](explosives.md#fiber)** (~50% chance) — a string substitute for before you've found sheep or spiders. Enchantable (shears slot), 128 durability. Crafted at a vanilla table:
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Flint"><img src="/images/items/flint.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Stick"><img src="/images/items/stick.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Flint Knife"><img src="/images/items/flint_knife.png"></div>
+</div>
+
