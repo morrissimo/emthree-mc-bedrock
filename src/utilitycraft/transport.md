@@ -234,6 +234,26 @@ Move fluids (water, lava, XP fluid, etc.) between tanks, machines, and generator
 
 *Pattern: `SSS / GCG / SSS` — Steel Nugget (S), Glass (G), Bucket (C)*
 
+### Fluid Extractor
+
+Pipes alone just *connect* — the **Fluid Extractor** is the node that actually **pushes** fluid. Attach it (on its facing side) to a fluid source — vanilla water/lava, a [Sink](utility_blocks.md#sink), a Crucible, or any UC tank/machine — and it drives that fluid through the connected Fluid Pipes to your tanks and generators (up to ~4000 mB/tick). Right-click to open **Fluid Extractor Settings**: on/off, transfer mode (**nearest / farthest / round-robin**), and — with a [Filter Upgrade](upgrades.md) — which fluid types to allow. Needs no power. Crafted at the UC Workbench:
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Fluid Pipe"><img src="/images/items/fluid_pipe.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Fluid Pipe"><img src="/images/items/fluid_pipe.png"></div>
+    <div class="crafting-slot" data-label="Hopper"><img src="/images/items/hopper.png"></div>
+    <div class="crafting-slot" data-label="Fluid Pipe"><img src="/images/items/fluid_pipe.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Fluid Pipe"><img src="/images/items/fluid_pipe.png"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Fluid Extractor"><img src="/images/items/fluid_extractor.png"></div>
+</div>
+
 ---
 
 ## Item Conduits
@@ -298,6 +318,64 @@ Active pull — draws items from the conduit network into the attached inventory
   </div>
   <div class="crafting-arrow">→</div>
   <div class="crafting-output" data-label="Item Importer"><img src="/images/items/item_conduit.png"></div>
+</div>
+
+---
+
+## Mechanical Hoppers
+
+Upgraded hoppers — **no redstone needed**, no power, and they support a [Filter Upgrade](upgrades.md) (right-click to open a whitelist/blacklist menu). All three also vacuum up nearby dropped items and can pull from chest/hopper minecarts. Crafted at the UC Workbench.
+
+- **Mechanical Hopper** — pulls from the container **above**, pushes out its **facing** side (down/up or a horizontal direction).
+- **Mechanical Upper** — the inverse: pulls from **below** and pushes **up** (or out its facing side).
+- **Mechanical Dropper** — pulls from the container it faces and **spits the items into the world** (no output container required), continuously.
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot" data-label="Hopper"><img src="/images/items/hopper.png"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Mechanical Hopper"><img src="/images/items/mechanic_hopper.png"></div>
+</div>
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot" data-label="Hopper"><img src="/images/items/hopper.png"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Mechanical Upper"><img src="/images/items/mechanic_upper.png"></div>
+</div>
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot" data-label="Dropper"><img src="/images/items/dropper.png"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot empty"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Mechanical Dropper"><img src="/images/items/mechanic_dropper.png"></div>
 </div>
 
 ---
