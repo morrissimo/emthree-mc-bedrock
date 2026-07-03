@@ -28,6 +28,7 @@ Values from the block definitions (buffer = energy storage, cost = energy per op
 | **XP Condenser** | — | — | **player XP** (not energy) |
 | **Way Center** | — | — | **XP levels** (not energy) |
 | Fan, Ender Hopper, XP Magnet, Mob Grinder, Trash Can | — | — | **none** |
+| **Mechanical Spawner** | — | — | **none** — mob essence |
 
 ---
 
@@ -290,6 +291,102 @@ Powered version of the UC Sieve. Feed it gravel, sand, dust, or other sieveable 
 ---
 
 ## Mob Farm
+
+The **Mechanical Spawner** is the mob *source*; pair it with a Mob Grinder (kills), Fan (funnels), and Ender Hopper (collects) for a fully automatic mob farm.
+
+### Mechanical Spawner
+
+A configurable spawner — load it with a mob **essence** and it spawns that mob right next to itself, over and over, while switched on. **No UC power and no per-spawn cost:** once it's assigned a mob and toggled on, it just runs.
+
+> No power required — runs on essence (see below).
+
+Build the **Spawner Core** first, then the Spawner itself (both at the **UC Workbench**):
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Redstone Block"><img src="/images/items/redstone_block.png"></div>
+    <div class="crafting-slot" data-label="Soul Sand"><img src="/images/items/soul_sand.png"></div>
+    <div class="crafting-slot" data-label="Redstone Block"><img src="/images/items/redstone_block.png"></div>
+    <div class="crafting-slot" data-label="Soul Sand"><img src="/images/items/soul_sand.png"></div>
+    <div class="crafting-slot" data-label="Diamond Block"><img src="/images/items/diamond_block.png"></div>
+    <div class="crafting-slot" data-label="Soul Sand"><img src="/images/items/soul_sand.png"></div>
+    <div class="crafting-slot" data-label="Redstone Block"><img src="/images/items/redstone_block.png"></div>
+    <div class="crafting-slot" data-label="Soul Sand"><img src="/images/items/soul_sand.png"></div>
+    <div class="crafting-slot" data-label="Redstone Block"><img src="/images/items/redstone_block.png"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Spawner Core"><img src="/images/items/spawner_core.png"></div>
+</div>
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Crying Obsidian"><img src="/images/items/crying_obsidian.png"></div>
+    <div class="crafting-slot" data-label="Diamond"><img src="/images/items/diamond.png"></div>
+    <div class="crafting-slot" data-label="Crying Obsidian"><img src="/images/items/crying_obsidian.png"></div>
+    <div class="crafting-slot" data-label="Iron Bars"><img src="/images/items/iron_bars.png"></div>
+    <div class="crafting-slot" data-label="Spawner Core"><img src="/images/items/spawner_core.png"></div>
+    <div class="crafting-slot" data-label="Iron Bars"><img src="/images/items/iron_bars.png"></div>
+    <div class="crafting-slot" data-label="Crying Obsidian"><img src="/images/items/crying_obsidian.png"></div>
+    <div class="crafting-slot" data-label="Iron Bars"><img src="/images/items/iron_bars.png"></div>
+    <div class="crafting-slot" data-label="Crying Obsidian"><img src="/images/items/crying_obsidian.png"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Mechanical Spawner"><img src="/images/items/mechanical_spawner.png"></div>
+</div>
+
+*Spawner Core: `RSR / SBS / RSR` — Redstone Block (R), Soul Sand (S), Diamond Block (B). Spawner: `ODO / ICI / OIO` — Crying Obsidian (O), Diamond (D), Iron Bars (I), Spawner Core (C).*
+
+**Using it:** hold a mob **essence** and **sneak + interact** to assign that mob ("Assigned X Essence!"). Interact again (no sneak) to toggle it **on** — it then spawns the mob beside itself on a repeating timer. Sneak + a **glass bottle** pops the essence back out so you can swap mobs.
+
+#### Getting essence — the Essence Vessel
+
+Essences aren't crafted directly; you farm them with an **Essence Vessel** (vanilla crafting table):
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Lapis Lazuli"><img src="/images/items/lapis_lazuli.png"></div>
+    <div class="crafting-slot" data-label="Soul Soil"><img src="/images/items/soul_soil.png"></div>
+    <div class="crafting-slot" data-label="Lapis Lazuli"><img src="/images/items/lapis_lazuli.png"></div>
+    <div class="crafting-slot" data-label="Soul Sand"><img src="/images/items/soul_sand.png"></div>
+    <div class="crafting-slot" data-label="Glass Bottle"><img src="/images/items/glass_bottle.png"></div>
+    <div class="crafting-slot" data-label="Soul Sand"><img src="/images/items/soul_sand.png"></div>
+    <div class="crafting-slot" data-label="Lapis Lazuli"><img src="/images/items/lapis_lazuli.png"></div>
+    <div class="crafting-slot" data-label="Soul Soil"><img src="/images/items/soul_soil.png"></div>
+    <div class="crafting-slot" data-label="Lapis Lazuli"><img src="/images/items/lapis_lazuli.png"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Essence Vessel"><img src="/images/items/essence_vessel.png"></div>
+</div>
+
+1. **Use the empty vessel on a live target mob** — this consumes that mob and tags the vessel to its type (shows *"Mob: X — 0%"*).
+2. **Kill that same mob type with the vessel in your off-hand** — each kill fills it **+1–5%**.
+3. At **100%** the vessel becomes that mob's **Essence**, ready to load into a Mechanical Spawner.
+
+#### Quantity Upgrade
+
+Apply to a spawner to raise how many mobs it spawns per cycle (up to ~3× the base count, with a bonus roll at max). Crafted at the **UC Workbench**:
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot" data-label="Cyan Dye"><img src="/images/items/cyan_dye.png"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot" data-label="Lapis Block"><img src="/images/items/lapis_block.png"></div>
+    <div class="crafting-slot" data-label="Base Upgrade"><img src="/images/items/base_upgrade.png"></div>
+    <div class="crafting-slot" data-label="Lapis Block"><img src="/images/items/lapis_block.png"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+    <div class="crafting-slot" data-label="Spawner Core"><img src="/images/items/spawner_core.png"></div>
+    <div class="crafting-slot" data-label="Steel Ingot"><img src="/images/items/steel_ingot.png"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Quantity Upgrade"><img src="/images/items/quantity_upgrade.png"></div>
+</div>
+
+#### Capturable mobs
+
+Blaze, Chicken, Cow, Creeper, Enderman, Guardian (& Elder Guardian), Hoglin, Illager (Pillager / Vindicator / Evoker / Witch), Magma Cube, Mooshroom, Pig, Piglin, Sheep, Skeleton, Slime, Spider, Wither Skeleton, Zombie.
+
+---
 
 ### Mob Grinder
 
