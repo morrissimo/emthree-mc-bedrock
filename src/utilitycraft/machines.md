@@ -266,18 +266,20 @@ Automatically fishes, including treasure and enchanted book drops. Place near wa
 
 The Auto Fisher runs on a **fishing net** loaded into its net slot — the net is its "gear," and its tier sets how fast and how *well* the machine fishes. Higher tiers fish faster, take more loot rolls per cast, and (via higher **luck**) reel in **enchanted books and enchanted gear**.
 
-| Net | Tier | Speed | Rolls | Luck |
-|---|---|---|---|---|
-| <img src="/images/items/string_fishing_net.png" width="16"> String | 0 | 0.5× | 1 | 0 |
-| <img src="/images/items/copper_fishing_net.png" width="16"> Copper | 1 | 1.0× | 1 | 3 |
-| <img src="/images/items/iron_fishing_net.png" width="16"> Iron | 2 | 1.25× | 2 | 3 |
-| <img src="/images/items/golden_fishing_net.png" width="16"> Golden | 3 | 2.0× | 2 | **10** |
-| <img src="/images/items/emerald_fishing_net.png" width="16"> Emerald | 4 | 1.5× | 3 | 2 |
-| <img src="/images/items/diamond_fishing_net.png" width="16"> Diamond | 5 | 2.0× | 3 | 5 |
-| <img src="/images/items/netherite_fishing_net.png" width="16"> Netherite | 6 | 4.0× | 4 | 6 |
+| Net | Tier | Speed | Rolls | Luck | Durability |
+|---|---|---|---|---|---|
+| <img src="/images/items/string_fishing_net.png" width="16"> String | 0 | 0.5× | 1 | 0 | 59 |
+| <img src="/images/items/copper_fishing_net.png" width="16"> Copper | 1 | 1.0× | 1 | 3 | 573 |
+| <img src="/images/items/iron_fishing_net.png" width="16"> Iron | 2 | 1.25× | 2 | 3 | 753 |
+| <img src="/images/items/golden_fishing_net.png" width="16"> Golden | 3 | 2.0× | 2 | **10** | **32** |
+| <img src="/images/items/emerald_fishing_net.png" width="16"> Emerald | 4 | 1.5× | 3 | 2 | 1,561 |
+| <img src="/images/items/diamond_fishing_net.png" width="16"> Diamond | 5 | 2.0× | 3 | 5 | 1,561 |
+| <img src="/images/items/netherite_fishing_net.png" width="16"> Netherite | 6 | 4.0× | 4 | 6 | 2,031 |
 
-- **Golden** has by far the highest luck (best for hunting enchanted loot) but very low durability — a glass cannon.
-- **Emerald** is a sidegrade: more rolls and durability, but lower speed/luck than Golden.
+- **Golden** has by far the highest luck (best for hunting enchanted loot) but the **lowest durability (32)** — a glass cannon.
+- **Emerald** is a sidegrade: more rolls and far more durability, but lower speed/luck than Golden.
+
+*Durability is the net item's listed value. Whether the Auto Fisher actually wears nets down isn't confirmed in the addon's source, so treat these mainly as relative rankings.*
 
 The base **String Net** is crafted at the **UC Workbench**; each higher tier wraps the previous net in a ring of that tier's material (copper → iron → gold → emerald → diamond → netherite):
 
