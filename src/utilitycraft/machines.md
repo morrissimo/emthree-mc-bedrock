@@ -62,9 +62,9 @@ Compresses items into plates and compressed blocks. The primary way to make iron
 
 ### Incinerator
 
-Burns items for fuel or simply destroys unwanted stacks. Feed it items via hopper and it will consume them continuously.
+UC's **powered smelter** (an electric furnace). Feed it dusts, raw materials, or ores and it outputs the **smelted result** — `iron_dust → iron ingot`, `raw_steel → steel ingot`, `gold_dust → gold ingot`, `cobbled_deepslate → deepslate`, etc. — running on UC energy instead of fuel. Pairs with the [Crusher](crusher.md) for a fuel-free ore-doubling line (crush → smelt). It uses a **curated** recipe set (mainly UC dusts/raws + a few stone conversions), not every vanilla furnace recipe.
 
-> Requires UC power.
+> Requires UC power (64,000 buffer, 800 / op).
 
 <div class="crafting-recipe">
   <div class="crafting-grid">
