@@ -358,8 +358,8 @@ Essences aren't crafted directly; you farm them with an **Essence Vessel** (vani
   <div class="crafting-output" data-label="Essence Vessel"><img src="/images/items/essence_vessel.png"></div>
 </div>
 
-1. **Use the empty vessel on a live target mob** — this consumes that mob and tags the vessel to its type (shows *"Mob: X — 0%"*).
-2. **Kill that same mob type with the vessel in your off-hand** — each kill fills it **+1–5%**.
+1. **Use the empty vessel on a live target mob to *tag* it.** This sacrifices that one mob to lock the vessel to its type, but captures **no essence yet** — the vessel starts at **0%**. (Using it just picks the mob; it doesn't fill anything.)
+2. **Fill it by killing that mob type with the vessel in your off-hand.** This is where *all* the progress comes from — **+1–5% per kill** (so roughly **20–100 kills** to fill one vessel), shown as a live % on the action bar.
 3. At **100%** the vessel becomes that mob's **Essence**, ready to load into a Mechanical Spawner.
 
 #### Quantity Upgrade
