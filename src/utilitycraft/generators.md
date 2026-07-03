@@ -493,11 +493,13 @@ light-level check**, so a panel still works fully enclosed or underground; it ju
 
 ## Thermo Generators
 
-Thermo Generators produce UC power from a **heat-source block placed directly below** them, using
-**water as coolant** from their own internal buffer. Valid heat blocks (with output multipliers):
-**blaze block ×1.5**, lava ×1, soul fire / soul torch / soul campfire ×0.75, fire / campfire / magma
-×0.5, torch ×0.25. Keep **water** in it (it consumes 1 energy per mB of water) — *not lava, not
-ice*. The Fluid Tank is only a **crafting ingredient**, not placed underneath.
+Thermo Generators produce UC power from a **heat-source block placed directly below** them, cooled by
+**water** kept in their own internal buffer. Valid heat blocks (with output multipliers): **blaze
+block ×1.5**, lava ×1, soul fire / soul torch / soul campfire ×0.75, fire / campfire / magma ×0.5,
+torch ×0.25 — so a blaze block gives the best output. They **burn 1 mB of water per unit of energy
+generated**; if the water runs out they stall ("No Coolant"), and any non-water fluid reads "Invalid
+Coolant". The Fluid Tank is only a **crafting ingredient** here — *not* placed underneath, and *not*
+lava or ice.
 
 ### Basic Thermo Generator
 
