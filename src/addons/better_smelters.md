@@ -34,12 +34,49 @@ Three things improve as you climb, not one:
     stat-superior**: 15× vs 10× speed at the *same* 0.4 fuel economy. Go Diamond only if diamonds are
     cheaper for you than amethyst — otherwise Amethyst is strictly the better path.
 
-*(The Netherrack and Oak Wood furnaces don't have recipe grids in the list below yet — noted as a
-follow-up.)*
-
 ## Recipes
 
-Each tier wraps the previous furnace at a vanilla crafting table with 6 material ingots and 1 material block.
+Most tiers wrap the previous furnace at a vanilla crafting table with 6 material ingots + 1 material block. The **Oak Wood** and **Netherrack** furnaces are the exceptions — standalone builds, not upgrades of a prior tier.
+
+### Oak Wood Furnace
+
+The wooden starter tier — built from scratch, no vanilla furnace needed.
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Planks"><img src="/images/items/planks.png"></div>
+    <div class="crafting-slot" data-label="Planks"><img src="/images/items/planks.png"></div>
+    <div class="crafting-slot" data-label="Planks"><img src="/images/items/planks.png"></div>
+    <div class="crafting-slot" data-label="Planks"><img src="/images/items/planks.png"></div>
+    <div class="crafting-slot empty"></div>
+    <div class="crafting-slot" data-label="Planks"><img src="/images/items/planks.png"></div>
+    <div class="crafting-slot" data-label="Planks"><img src="/images/items/planks.png"></div>
+    <div class="crafting-slot" data-label="Log"><img src="/images/items/log.png"></div>
+    <div class="crafting-slot" data-label="Planks"><img src="/images/items/planks.png"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Oak Wood Furnace"><img src="/images/items/oak_wood_furnace.png"></div>
+</div>
+
+### Netherrack Furnace
+
+A standalone side-grade — wrap a vanilla furnace in netherrack for the **no-fuel** furnace (never needs feeding; see the tier table).
+
+<div class="crafting-recipe">
+  <div class="crafting-grid">
+    <div class="crafting-slot" data-label="Netherrack"><img src="/images/items/netherrack.png"></div>
+    <div class="crafting-slot" data-label="Netherrack"><img src="/images/items/netherrack.png"></div>
+    <div class="crafting-slot" data-label="Netherrack"><img src="/images/items/netherrack.png"></div>
+    <div class="crafting-slot" data-label="Netherrack"><img src="/images/items/netherrack.png"></div>
+    <div class="crafting-slot" data-label="Furnace"><img src="/images/items/furnace.png"></div>
+    <div class="crafting-slot" data-label="Netherrack"><img src="/images/items/netherrack.png"></div>
+    <div class="crafting-slot" data-label="Netherrack"><img src="/images/items/netherrack.png"></div>
+    <div class="crafting-slot" data-label="Netherrack"><img src="/images/items/netherrack.png"></div>
+    <div class="crafting-slot" data-label="Netherrack"><img src="/images/items/netherrack.png"></div>
+  </div>
+  <div class="crafting-arrow">→</div>
+  <div class="crafting-output" data-label="Netherrack Furnace"><img src="/images/items/netherrack_furnace.png"></div>
+</div>
 
 ### Copper Furnace
 
