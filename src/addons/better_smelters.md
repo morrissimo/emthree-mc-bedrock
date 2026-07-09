@@ -1,6 +1,41 @@
 # Better Smelters
 
-Tiered standalone furnaces. Completely independent of the UC power system — they just smelt faster as you upgrade.
+Tiered standalone furnaces, independent of the UC power system. Upgrading isn't *just* about speed —
+higher tiers also burn **far less fuel per item**, and two tiers have special modes (a **fuel-free**
+furnace and a **whole-stack batch smelter**). See the tier table before you commit to a path.
+
+## Furnace tiers at a glance
+
+Three things improve as you climb, not one:
+
+| Furnace | Relative speed | Fuel / item (lower = better) | Special |
+|---|---|---|---|
+| Oak Wood | 1× | 1.0 | starter |
+| Copper | 1.5× | 1.0 | |
+| Iron | 2× | 1.0 | |
+| **Netherrack** | 2× | **0 — no fuel, ever** | set-and-forget, never feed it |
+| Gold | 3× | 0.8 | |
+| Emerald | 5× | 0.6 | |
+| Diamond | 10× | 0.4 | |
+| Amethyst | 15× | 0.4 | faster branch off Emerald (see below) |
+| Netherite | 20× | 0.2 | |
+| Blazing | 25× | 0.1 | ~10× less fuel than Iron |
+| **Nether Star** | 10× | 0.01 | **smelts a whole input stack in one operation** + near-free fuel |
+
+- **Speed** runs 1× (Oak) → 25× (Blazing).
+- **Fuel economy** is the underrated axis: a Blazing furnace burns roughly **10× less fuel per item**
+  than Iron, and the Nether Star **~100× less**. At volume that beats raw speed.
+- **Two special furnaces:** the **Netherrack** furnace needs **no fuel at all** (only 2× speed, but
+  zero upkeep — great for an always-on smelting line), and the **Nether Star** furnace **batch-smelts
+  an entire input stack at once** — the bulk-throughput endgame furnace.
+
+!!! tip "Amethyst vs Diamond — Amethyst wins on paper"
+    Both branch off the **Emerald** furnace and both upgrade into Netherite, but **Amethyst is
+    stat-superior**: 15× vs 10× speed at the *same* 0.4 fuel economy. Go Diamond only if diamonds are
+    cheaper for you than amethyst — otherwise Amethyst is strictly the better path.
+
+*(The Netherrack and Oak Wood furnaces don't have recipe grids in the list below yet — noted as a
+follow-up.)*
 
 ## Recipes
 
@@ -190,7 +225,7 @@ Only vanilla containers count as valid sources/destinations (chests, barrels, ho
 
 ## Key Points
 
-- Each higher tier smelts faster than the previous
+- Higher tiers improve **speed, fuel economy, and (top tiers) special modes** — not just speed (see the [tier table](#furnace-tiers-at-a-glance))
 - Not connected to UC power — no generators needed
 - Functions as a direct drop-in replacement for vanilla furnaces
 - Good parallel investment alongside UC machines; doesn't require the chip/power progression
